@@ -1,0 +1,361 @@
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons-outlined.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons-outlined.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons-outlined.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons-outlined.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+span.size-48 {
+  font-size: 48px;
+  font-variation-settings: 'OPSZ' 48;
+  color: white;
+}
+
+
+:root {
+  --background-color: #000;
+  --primary-color: #000;
+  --highlight-color: rgb(255, 0, 149);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+head {
+  display: none;
+}
+
+body {
+
+  font-family: 'Exo 2', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 * {
+  color: white;
+}
+
+/*  -----------------------------------
+    |             M E N Ú             |
+    -----------------------------------  */
+
+.menu {
+  overflow: hidden;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.10);
+  /* Fondo del menú */
+  font-size: 15px;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  /* Color letras del menú */
+  margin: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px 16px;
+  border: 5px;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+.menu a:hover {
+  background-color: rgb(255, 0, 149);
+  /* Pointer: Color fondo del menú */
+  color: black;
+  /* Pointer: Color letras del menú */
+  padding: 5px 13px;
+}
+
+.menu ul {
+  list-style-type: none;
+  /* Quita los puntos de la lista */
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 2px;
+  /* Espaciado entre elementos */
+}
+
+.welcome {
+  position: center;
+  font-size: 20px;
+  line-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 15px;
+}
+
+.name-surname {
+  position: center;
+  font-size: 50px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 20px;
+}
+
+.developer {
+  position: center;
+  font-size: 50px;
+  line-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 25px;
+}
+
+.fullstack {
+  position: center;
+  font-size: 50px;
+  line-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 30px;
+}
+
+
+/* General configuration for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content label {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+/* Specific configuration for dropdown button */
+.dropdown-button {
+  display: block;
+  color: white;
+  /* Color letras del menú */
+  margin: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px 16px;
+  border: 5px;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+.dropdown-button:hover {
+  background-color: #ccc;
+}
+
+
+/*  -----------------------------
+    |    CONTACT & NEWSLETTER   |
+    -----------------------------  */
+
+
+
+
+/*  ---------------------------------------
+    |             F O O T E R             |
+    ---------------------------------------  */
+
+.footer {
+  background-color: rgb(255, 255, 255, 0.10);
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  color: white; /* Color letras */
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-column a span {
+  color: white;
+}
+
+.footer-column a:hover span {
+  color: var(--highlight-color);
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column li a {
+  text-decoration: none;
+}
+
+.footer-column li a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  /*justify-content: space-evenly; */
+  text-align: center;
+  font-size: 40px;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #ecf0f1;
+}
+
+.footer-bottom-row p {
+  margin: 0;
+}
+
+.footer-bottom-row a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-bottom-row a:hover {
+  text-decoration: underline;
+}
+
+
+/*
+
+.footer {
+  background-color: rgb(255, 255, 255, 0.10);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+.footer .footer-container {
+  color: var(--background-color);
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.footer .footer-container h3 {
+  color: white;
+}
+
+.footer .footer-container .social {
+  text-align: center;
+}
+
+.footer .footer-container .social a:hover path {
+  fill: var(--highlight-color);
+}
+
+.footer .footer-container .social a:hover .material-symbols-outlined {
+  color: var(--highlight-color);
+}
+
+
+.footer .footer-container .support {
+  text-align: right;
+}
+
+.footer .footer-container .support h3 {
+  text-align: right;
+}
+
+*/
