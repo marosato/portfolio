@@ -51,6 +51,11 @@ span.size-48 {
   color: white;
 }
 
+.p {
+  font-size: 15px;
+  color: white;
+
+}
 
 :root {
   --background-color: #000;
@@ -72,7 +77,6 @@ head {
 }
 
 body {
-
   font-family: 'Exo 2', sans-serif;
   background-color: var(--background-color);
   margin: 0;
