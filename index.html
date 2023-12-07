@@ -14,10 +14,18 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/Logo/Logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/Logo/Logo.png">
+
+    <!-- CARDS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 
     <!-- GOOGLE FONTS -->
     <style>
@@ -62,7 +70,7 @@
                         <a href="#portfolio"> PORTAFOLIOS </a>
                     </li>
                     <li>
-                        <a href="#education"> EDUCACION </a>
+                        <a href="#education"> ESTUDIOS </a>
                     </li>
                     <li>
                         <a href="#contact"> CONTACTO </a>
@@ -90,7 +98,7 @@
 <body>
     <!-- HOME -->
     <section class="home" id="home">
-        <div class="">
+        <div class="intro">
             <h3 class="welcome"> HOLA, SOY </h3>
             <h1 class="name-surname"> MACARENA ROSATO </h1>
             <h3 class="welcome"> Y SOY </h3>
@@ -98,18 +106,28 @@
                 <span class="developer"> DESARROLLADORA </span>
                 <span class="fullstack"> FULL STACK </span>
             </h2>
-            <h1 class="intro3"> </h1>
+        </div>
+        <!-- CV -->
+        <div class="button-home">
+            <div class="ripple"></div>
+            <div class="button-wrapper">
+                <a href="Archivos/CV Macarena Ayelén Rosato.pdf" target="_blank" id="downloadButton"> Descarga mi CV
+                </a>
+                <span class="material-symbols-outlined"> download </span>
+            </div>
         </div>
     </section>
 
     <!-- ABOUT-->
     <section class="about" id="about">
         <h2> SOBRE MI </h2>
+        Mi primera página web hecha con HTML, CSS......
     </section>
 
     <!-- KNOWLEDGE -->
     <section class="knowledge" id="knowledge">
         <h2> CONOCIMIENTOS </h2>
+        Mi primera página web hecha con HTML, CSS......
     </section>
 
     <!-- CERTIFICATE -->
@@ -127,77 +145,179 @@
 
     <!-- PORTFOLIO -->
     <section class="portfolio" id="portfolio">
-        <div class="portfolio">
-            <h2> PORTAFOLIOS </h2>
-            <h4>
-                Mi primera página web hecha con HTML, CSS......
-                Mi primera página web hecha con HTML, CSS......
-                Mi primera página web hecha con HTML, CSS......
-                Mi primera página web hecha con HTML, CSS......
-            </h4>
-            <a href="https://tiendaemme.netlify.app/"> TIENDA EMME </a>
+        <h2> PORTAFOLIOS </h2>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                alt="">
+            <div class="card-content">
+                <h2> TIENDA EMME </h2>
+                <p>
+                    Mi primer proyecto. <br>
+                    Hecho con: <br>
+                    HTML, CSS y JavaScript (agregar los íconos correspondientes).
+                </p>
+                <a href="https://tiendaemme.netlify.app/" class="button-card">
+                    Visitar proyecto
+                    <span class="material-symbols-outlined"> arrow_right_alt </span>
+                </a>
+            </div>
         </div>
-
     </section>
 
     <!-- EDUCATION -->
     <section class="education" id="education">
         <div class="education">
-            <h2> EDUCACION </h2>
+            <h2> ESTUDIOS </h2>
             <h4>
                 Ingeniería en Informática.
             </h4>
         </div>
-
     </section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-        <h2> CONTACT </h2>
-        <i class="fa-brands fa-linkedin"></i>
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-        <div class="footer" id="footer">
-            <div class="footer-container">
-                <div class="footer-columns">
-                    <!-- Columna 1: Información de contacto -->
-                    <div class="footer-column">
-                        <h3> CONTACTO </h3>
-                        <!-- Mail Icon -->
-                        <a href="mailto:rosatomacarena@outlook.com">
-                            <span class="material-symbols-outlined size-48"> mail </span>
-                        </a>
-                    </div>
-                    <!-- Columna 2: Redes sociales -->
-                    <div class="footer-column">
-                        <h3> REDES </h3>
-                        <div class="social">
-                            <!-- GitHub Icon -->
-                            <a href="https://github.com/MARosato">
-                                <span class="fab fa-github"></span>
-                            </a>
-                            <!-- LinkedIn Icon -->
-                            <a href="https://www.linkedin.com/in/macarena-ayelén-rosato">
-                                <span class="fab fa-lg fab fa-linkedin"></span>
-                            </a>
-                        </div>
-                    </div>
+        <div class="form">
+            <div class="wrapper">
+                <!-- Firstname -->
+                <div class="input-container ic1">
+                    <input placeholder="" type="text" class="input" id="firstname">
+                    <div class="cut"></div>
+                    <label class="iLabel" for="firstname"> Nombre </label>
                 </div>
-                <!-- Bottom Row: Derechos de autor e información adicional -->
-                <div class="footer-bottom-row">
-                    <p>&copy; 2023 Nombre. Todos los derechos reservados. </p>
-                    <p> Diseñado por <a href="https://"> Macarena Ayelén Rosato </a> </p>
+                <!-- Lastname -->
+                <div class="input-container ic2">
+                    <input placeholder="" type="text" class="input" id="lastname">
+                    <div class="cut"></div>
+                    <label class="iLabel" for="lastname"> Apellido </label>
                 </div>
             </div>
+            <!-- Email -->
+            <div class="input-container ic3">
+                <input placeholder="" type="text" class="input" id="email">
+                <div class="cut cut-short"></div>
+                <label class="iLabel" for="email"> Email </label>
+            </div>
+            <!-- Message -->
+            <div class="input-container ic4">
+                <input placeholder="" type="text" class="input" id="message">
+                <div class="cut"></div>
+                <label class="iLabel" for="message"> Mensaje </label>
+            </div>
+            <!-- Submit button -->
+            <button class="submit" type="text"> submit </button>
         </div>
-    </footer>
 
 
-    <!-- <footer> 
+        <!--  
+        <div class="form">
+            <div class="title"> Ponte en contacto. </div>
+            <div class="subtitle"> Deja tu mensaje. </div>
+
+            <div class="input-container ic1">
+                <input placeholder="" type="text" class="input" id="firstname">
+                <div class="cut"></div>
+                <label class="iLabel" for="firstname"> First name </label>
+            </div>
+
+            <div class="input-container ic2">
+                <input placeholder="" type="text" class="input" id="lastname">
+                <div class="cut"></div>
+                <label class="iLabel" for="lastname"> Last name </label>
+            </div>
+
+            <div class="input-container ic2">
+                <input placeholder="" type="text" class="input" id="email">
+                <div class="cut cut-short"></div>
+                <label class="iLabel" for="email"> Email </label>
+            </div>
+
+            <div class="input-container ic2">
+                <input placeholder="" type="text" class="input" id="message">
+                <div class="cut"></div>
+                <label class="iLabel" for="message"> Mensaje </label>
+            </div>  
+
+            <button class="submit" type="text"> submit </button>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- CONTACT
+    <section class="contact" id="contact">
+        <h2> CONTACTO </h2>
+        <div class="row">
+            <form action="" id="form">
+
+                <div class="inputBox">
+                    <label for="name"> Nombre </label>
+                    <span class="material-symbols-outlined"> person </span>
+                    <input class="input" type="text" name="text" placeholder="Nombre">
+                </div>
+
+                <div class="inputBox">
+                    <label for="email"> Email </label>
+                    <span class="material-symbols-outlined"> mail </span>
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="inputBox">
+                    <span class="material-symbols-outlined"> comment </span>
+                    <label for="message"> Mensaje</label>
+                    <input class="input" type="text" name="text" placeholder="Mensaje">
+                </div>
+
+                <div class="submit-btn">
+                    <input class="input" type="submit" name="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+        <footer>
+            <div class="footer" id="footer">
+                <div class="footer-container">
+                    <div class="footer-columns">
+                        <!-- Columna 1: Información de contacto -->
+                        <div class="footer-column">
+                            <div class="contact">
+                                <h3> CONTACTO </h3>
+                                <!-- Mail Icon -->
+                                <a href="mailto:rosatomacarena@outlook.com">
+                                    <span class="material-symbols-outlined size-48"> mail </span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna 2: Redes sociales -->
+                        <div class="footer-column">
+                            <div class="social">
+                                <h3> REDES </h3>
+                                <!-- GitHub Icon -->
+                                <a href="https://github.com/MARosato">
+                                    <span class="fab fa-github"></span>
+                                </a>
+                                <!-- LinkedIn Icon -->
+                                <a href="https://www.linkedin.com/in/macarena-ayelén-rosato">
+                                    <span class="fab fa-lg fab fa-linkedin"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom Row: Derechos de autor e información adicional -->
+                    <div class="footer-bottom-row">
+                        <p>&copy; 2023 Nombre. Todos los derechos reservados. </p>
+                        <p> Diseñado por <a href="https://"> Macarena Ayelén Rosato </a> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- <footer> 
         <div class="footer" id="footer">
             <div class="footer-container" id="footer">
                 <div class="columns">
@@ -213,8 +333,6 @@
         </div>
     </footer>
     
-
-
 
 
         MENU MOBILE
@@ -262,14 +380,15 @@
     -->
 
 
-
-    <!-----------------------------------------------
+        <!-----------------------------------------------
       |             J A V A S C R I P T             |
       ------------------------------------------------>
 
-    <script>
+        <script>
+            // CV
 
-    </script>
+
+        </script>
 
 
 </body>
