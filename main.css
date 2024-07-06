@@ -1383,8 +1383,8 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
 
 
 .portfolio .card {
-  width: 320px;
-  height: 400px;
+  /* width: 320px;
+  height: 400px; */
   background-color: var(--bs-tertiary-bg) !important;
 }
 
