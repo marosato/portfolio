@@ -401,7 +401,104 @@ span.size-48 {
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
+
 #home {
+  background-color: var(--bs-body-bg) !important;
+  /* background-size: cover;
+  background-position: center;
+  transform: scale(1) rotateX(0);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms; */
+}
+
+#home h1 {
+  background-image: url(https://media.giphy.com/media/KH4QT4rqnnka04884l/giphy.gif?cid=ecf05e470ph3wa02b2zk7y082m583p0cyw7s4y42szkpqcl4&ep=v1_gifs_search&rid=giphy.gif&ct=g) !important;
+  background-size: cover !important;
+  color: transparent !important;
+  -moz-background-clip: text !important;
+  -webkit-background-clip: text !important;
+  /* font-family: 'Poppins', sans-serif !important; */
+  text-transform: uppercase;
+  /* font-size: 8rem; */
+  font-size: 5.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  text-align: center;
+
+}
+
+#title {
+  font-family: var(--bs-font-sans-serif) !important;
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height: 2
+}
+
+#home .dancing {
+  color: var(--bs-secondary-color) !important;
+  background-color: var(--bs-tertiary-bg) !important;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  /* transform: translateY(-175px) rotate(-45deg); */
+  z-index: 2;
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 16px;
+}
+
+#home .dancing span {
+  padding: 8px 15px;
+  padding-right: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: var(--bs-secondary-color);
+}
+
+#home .featurette-divider {
+  border-color: var(--bs-secondary-color);
+  border-top-width: 2px;
+  width: 54%;
+  margin: 0 auto;
+}
+
+#home .social-media a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 2.7;
+  font-weight: 700;
+  color: var(--bs-secondary-color) !important;
+  transition: color 0.3s ease-in;
+}
+
+#home .social-media a:hover {
+  color: var(--bs-primary) !important;
+}
+
+#home .social-media span {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#home .social-media span:hover {
+  color: var(--bs-primary) !important;
+}
+
+
+
+/* #home {
   background-color: var(--bs-body-bg) !important;
   /* background-size: cover;
   background-position: center;
@@ -420,7 +517,7 @@ span.size-48 {
   font-size: 8em;
   font-weight: 100;
   line-height: 1.2;
-} */
+}
 
 #home .dancing {
   color: var(--bs-secondary-color) !important;
@@ -428,7 +525,7 @@ span.size-48 {
   line-height: 1;
   letter-spacing: 3px;
   text-transform: uppercase;
-  /* transform: translateY(-175px) rotate(-45deg); */
+  /* transform: translateY(-175px) rotate(-45deg); *
   z-index: 2;
   padding: 8px 15px;
   display: inline-block;
@@ -499,7 +596,13 @@ span.size-48 {
   text-transform: uppercase !important;
   font-size: 130px !important;
   margin: 10px 0 !important;
-}
+} */
+
+
+
+
+
+
 
 
 
