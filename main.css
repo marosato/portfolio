@@ -427,7 +427,6 @@ span.size-48 {
   font-weight: 100;
   line-height: 1.2;
   text-align: center;
-
 }
 
 #title {
@@ -474,14 +473,13 @@ span.size-48 {
 #home .social-media a {
   display: inline-block;
   font-size: 20px;
-  line-height: 2.7;
-  font-weight: 700;
   color: var(--bs-secondary-color) !important;
-  transition: color 0.3s ease-in;
+  transition: color 0.24s ease-in;
 }
 
 #home .social-media a:hover {
   color: var(--bs-primary) !important;
+  background-color: var(--bs-body-bg);
 }
 
 #home .social-media span {
