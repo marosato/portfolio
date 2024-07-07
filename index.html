@@ -103,35 +103,43 @@
 <!-- MENÚ -->
 <header class="header">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://marosato.github.io/mrosato/"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link active px-3" aria-current="page"> Inicio </a>
+                        <a class="nav-link active" aria-current="page" href="#home"> Inicio </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link active px-2" aria-current="page"> Acerca de </a>
+                        <a class="nav-link" href="#about"> Acerca de </a>
                     </li>
                 </ul>
-                <a href="https://marosato.github.io/mrosato/" class="navbar-brand mx-auto fw-bold" id="logo"> MAR
-                    <span class="dot"></span>
-                </a>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active px-2" aria-current="page" href="#portfolio"> Portafolio </a>
+                        <a class="navbar-brand fw-bold" href="https://marosato.github.io/mrosato/" id="logo">
+                            MAR
+                            <span class="dot"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"> Portafolio </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active px-3" aria-current="page" href="#contact"> Contacto </a>
+                        <a class="nav-link" href="#contact"> Contacto </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
     <!-- Navbar -->
     <!-- <nav class="navbar navbar-expand-lg bg-custom" id="navbar">
         <div class="container-fluid mb-lg-1">
@@ -178,8 +186,8 @@
         <div class="home px-4 py-5 my-5 text-center">
             <!-- <img class="d-block mx-auto mb-4" src="" alt="" width="72" height="57"> -->
             <h1 class="display-5 fw-bold text-body-emphasis"> Macarena <br> Ayelén <br> Rosato </h1>
-            <div class="col-lg-6 mx-auto">
-                <h3 class="fs-5 fw-normal fw-bold text-muted mb-3 dancing"> Desarrolladora Full Stack </h3>
+            <div class="col-lg-6 mx-auto py-2">
+                <h3 class="fs-5 fw-normal fw-bold text-muted mb-2 dancing"> Desarrolladora Full Stack </h3>
                 <p class="lead mb-4"></p>
                 <div class="social-media d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3"> Primary button</button> -->
@@ -200,13 +208,13 @@
                         <i class="bi bi-linkedin"></i>
                     </a>
                     <!-- GitHub -->
-                    <a class="btn btn-outline-secondary btn-lg px-4 rounded-4" role="button" href="https://github.com/MARosato"
-                        target="_blank"> GitHub
+                    <a class="btn btn-outline-secondary btn-lg px-4 rounded-4" role="button"
+                        href="https://github.com/MARosato" target="_blank"> GitHub
                         <i class="bi bi-github"></i>
                     </a>
                 </div>
             </div>
-        </article>
+            </article>
     </section>
 
 
@@ -274,7 +282,7 @@
 
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center social-media">
                 <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3"> Primary button</button> -->
-                <!-- CV --
+    <!-- CV --
                 <a class="btn btn-outline-secondary btn-lg px-4" role="button"
                     href="Archivos\CV Macarena Ayelén Rosato.pdf" target="_blank"> CV
                     <i class="bi bi-file-earmark-person-fill"></i>
@@ -314,7 +322,7 @@
     <!-- ABOUT-->
     <section class="about" id="about">
         <article class="profile">
-            <h2> SOBRE MI
+            <h2 class="text-center"> SOBRE MI
                 <span class="dot"></span>
             </h2>
             <div class="description">
@@ -330,7 +338,7 @@
                                 Macarena Ayelén Rosato
                             </h1>
                             <p class="lead">
-                                Estudiante de la carrera en <em>Analista de Sistemas</em>.
+                                Estudiante de la carrera en <em> Analista de Sistemas </em>.
                             </p>
                             <p class="lead">
                                 En búsqueda de mi primera oportunidad laboral.
