@@ -1809,6 +1809,9 @@ transform: translateX(-50%);
     |             C O N T A C T             |
     -----------------------------------------  */
 
+.contact h1 {
+color: var(--bs-primary) !important;
+}
 
 .contact .container form {
   background-color: var(--bs-tertiary-bg);
@@ -1816,10 +1819,12 @@ transform: translateX(-50%);
   color: var(--bs-secondary-color);
 }
 
-.contact .container form .form-floating input {
+.contact .container form .form-floating .form-control {
   background-color: var(--bs-tertiary-bg);
-  color: var(--bs-secondary-color) !important;
+  color: var(--bs-secondary-color);
+  border-color: var(--bs-primary);
 }
+
 .contact .container form .form-floating label::after {
   background-color: var(--bs-primary);
 }
@@ -1828,6 +1833,11 @@ transform: translateX(-50%);
   background-color: var(--bs-primary);
   border: none;
 }
+
+.contact hr {
+  border-color: var(--bs-secondary-color);
+}
+
 
 
 
