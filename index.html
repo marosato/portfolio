@@ -348,6 +348,29 @@
                 </div>
             </div>
         </article>
+
+
+        <article>
+            <div class="container education pt-md-4 pb-md-4 px-4 py-5">
+                <h2 class="pb-2 secondary-title"> Tecnologías </h2>
+                <div class="row mb-3 text-center">
+                    <div class="col-6 col-sm-4 themed-grid-col">
+
+                    </div>
+                    <div class="col-6 col-sm-4 themed-grid-col">
+
+                    </div>
+                    <div class="col-6 col-sm-4 themed-grid-col">
+
+                    </div>
+                    <div class="col-6 col-sm-4 themed-grid-col">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
         <!-- TECHNOLOGY -->
         <article class="tech-stack">
             <div class="container education pt-md-4 pb-md-4 px-4 py-5">
@@ -763,9 +786,9 @@
 
     <!-- CONTACT -->
     <section class="contact border-top" id="contact">
-        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-            <div class="row align-items-center g-lg-5 py-5">
-                <div class="col-lg-7 text-center text-lg-start">
+        <div class="contact container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="contact-container row align-items-center g-lg-5 py-5">
+                <div class="contact-info col-lg-7 text-center text-lg-start">
                     <h1 class="display-4 fw-bold lh-1 mb-3 text-start"> CONTACTO
                         <span class="dot"></span>
                     </h1>
@@ -799,7 +822,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-10 mx-auto col-lg-5">
+                <div class="contact-card col-md-10 mx-auto col-lg-5">
                     <form class="p-4 p-md-5 rounded-3 border needs-validation" novalidate>
                         <div class="row g-2 mb-3">
                             <div class="col-md">
@@ -841,7 +864,32 @@
                                 <input type="checkbox" value="remember-me"> Recordarme
                             </label>
                         </div>
-                        <button class="btn btn-lg w-100" type="submit"> Enviar </button>
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-lg w-100" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Enviar
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"> ¡MUCHAS GRACIAS! </h1>
+                                        <button class="btn-close" type="button" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body mb-2 mt-2">
+                                        Se ha enviado con éxito.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Guardar
+                                            y enviar </button>
+                                        <!-- <button type="button" class="btn btn-primary"> Guardar cambios </button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- <hr class="my-4">
                         <small class="text-body-secondary"></small> -->
                     </form>
@@ -899,17 +947,24 @@
                          Celular
                     </a>
                 </li>
+
+            </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="col mb-3 media-section">
+            <h5> Redes Sociales </h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a class="nav-link p-0 text-body-secondary" href="https://github.com/MARosato" target="_blank">
+                        <i class="bi bi-github"></i>
+                         GitHub
+                    </a>
+                </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link p-0 text-body-secondary"
                         href="https://www.linkedin.com/in/macarena-ayelén-rosato" target="_blank">
                         <i class="bi bi-linkedin"></i>
                          LinkedIn
-                    </a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link p-0 text-body-secondary" href="https://github.com/MARosato" target="_blank">
-                        <i class="bi bi-github"></i>
-                         GitHub
                     </a>
                 </li>
             </ul>
@@ -928,7 +983,7 @@
             </ul>
         </div>
         <!-- Help -->
-        <div class="col mb-3 help-section">
+        <!-- <div class="col mb-3 help-section">
             <h5> Ayuda </h5>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
@@ -950,7 +1005,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </footer>
 
     <!-----------------------------------------------

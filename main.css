@@ -1487,7 +1487,6 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
   color: var(--bs-secondary-color);
 }
 
-
 .portfolio .card {
   /* width: 320px;
   height: 400px; */
@@ -1536,7 +1535,6 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
   color: var(--bs-secondary-color) !important;
 }
 
-
 .portfolio .card-body .text-body-secondary {
   color: #6c757d !important;
   font-size: 0.8rem;
@@ -1545,9 +1543,7 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
   margin: 0 10px 0 10px;
 }
 
-
-
-/* Project Links */
+/*------ Project Links ------*/
 .portfolio .project-links .btn-secondary {
   background-color: var(--bs-tertiary-bg) !important;
   border-color: var(--bs-secondary-color);
@@ -1559,7 +1555,8 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
   border-color: var(--bs-tertiary-bg);
 }
 
-/* Project Icons */
+/*------ Project Icons ------*/
+
 .portfolio .project-icons {
   display: block;
   text-align: center;
@@ -1813,6 +1810,8 @@ transform: translateX(-50%);
 color: var(--bs-primary) !important;
 }
 
+/* ------  ------ */
+
 .contact .container form {
   background-color: var(--bs-tertiary-bg);
   border-color: var(--bs-primary) !important;
@@ -1825,8 +1824,13 @@ color: var(--bs-primary) !important;
   border-color: var(--bs-primary);
 }
 
+.contact .container form .form-floating label {
+  color: var(--bs-secondary-color);
+}
+
 .contact .container form .form-floating label::after {
-  background-color: var(--bs-primary);
+  background-color: transparent;
+  color: var(--bs-primary) !important;
 }
 
 .contact .container form button {
@@ -1834,12 +1838,27 @@ color: var(--bs-primary) !important;
   border: none;
 }
 
+/* ------ MODAL ------*/
+
 .contact hr {
   border-color: var(--bs-secondary-color);
 }
 
+/* ------ MODAL ------*/
 
+.contact .modal .modal-content {
+  background-color: var(--bs-tertiary-bg) !important;
+}
 
+.contact .modal .modal-content .modal-header h1 {
+  color: var(--bs-primary) !important;
+}
+
+.contact .modal .modal-content .modal-footer button {
+  color: var(--bs-tertiary-bg);
+}
+
+/* ------  ------ */
 
 /*  ---------------------------------------
     |             F O O T E R             |
