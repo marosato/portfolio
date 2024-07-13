@@ -348,36 +348,6 @@
                                 habilidades de trabajo en equipo mientras aprovecho cada
                                 oportunidad para aprender y crecer.
                             </p>
-                            <!-- Icons -->
-                            <div class="row">
-                                <div class="col-auto text-left">
-                                    <a class="nav-link p-0 text-body-secondary">
-                                        <i class="bi bi-geo-alt-fill"></i> 
-                                        Buenos Aires, Argentina
-                                    </a>
-                                </div>
-                                <div class="col text-right">
-                                    <a class="nav-link p-0 text-body-secondary">
-                                        <i class="bi bi-briefcase-fill"></i> 
-                                        Disponible para trabajar
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-auto text-left">
-                                    <a class="nav-link mt-2 p-0 text-body-secondary"
-                                        href="mailto:rosatomacarena@outlook.com">
-                                        <i class="bi bi-envelope-fill"></i> 
-                                        rosatomacarena@outlook.com
-                                    </a>
-                                </div>
-                                <div class="col text-right">
-                                    <a class="nav-link mt-2 p-0 text-body-secondary" href="tel:+54 9 11 6175-4302">
-                                        <i class="bi bi-telephone-fill"></i> 
-                                        +54 9 11 6175-4302
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -799,11 +769,103 @@
     </section>
 
     <!-- CONTACT -->
-    <!-- <section class="contact" id="contact">
-        <h2> CONTACTO
-            <span class="dot"></span>
-        </h2>
-    </section> -->
+    <section class="contact" id="contact">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 mb-3 text-start"> CONTACTO
+                        <span class="dot"></span>
+                    </h1>
+                    <p class="col-lg-10 fs-4"></p>
+                    <!-- Icons -->
+                    <div class="row row-cols-1 row-cols-md-1 g-2 text-start fs-5">
+                        <div class="col-6 col-sm-4 themed-grid-col">
+                            <a class="nav-link p-0 text-body-secondary">
+                                <i class="bi bi-geo-alt-fill"></i> 
+                                Buenos Aires, Argentina
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 themed-grid-col">
+                            <a class="nav-link text-body-secondary">
+                                <i class="bi bi-briefcase-fill"></i> 
+                                Disponible para trabajar
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 themed-grid-col">
+                            <a class="nav-link text-body-secondary" href="mailto:rosatomacarena@outlook.com">
+                                <i class="bi bi-envelope-fill"></i> 
+                                Email
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 themed-grid-col">
+                            <a class="nav-link text-body-secondary" href="tel:+54 9 11 6175-4302">
+                                <i class="bi bi-telephone-fill"></i> 
+                                Celular
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 rounded-3 border needs-validation" novalidate>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
+                                    <label for="floatingName"> Nombre </label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingLastName"
+                                        placeholder="Apellido">
+                                    <label for="floatingLastName"> Apellido </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" required placeholder="Email">
+                            <label for="floatingInput"> Email </label>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa una dirección de correo electrónico válida.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" required minlength="8"
+                                placeholder="Contraseña">
+                            <label for="floatingPassword"> Contraseña </label>
+                            <div class="invalid-feedback">
+                                La contraseña debe tener al menos 8 caracteres.
+                            </div>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Recordarme
+                            </label>
+                        </div>
+                        <button class="btn btn-lg w-100" type="submit"> Enviar </button>
+                        <hr class="my-4">
+                        <small class="text-body-secondary">
+                            Al hacer clic en Enviar, aceptas los términos de uso.
+                        </small>
+                    </form>
+
+                    <script>
+                        // Ejemplo de cómo activar la validación cuando se hace clic en el botón de envío
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const form = document.querySelector('.needs-validation');
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        }, false);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 my-0 border-top">
@@ -837,13 +899,13 @@
                 <li class="nav-item mb-2">
                     <a class="nav-link p-0 text-body-secondary" href="mailto:rosatomacarena@outlook.com">
                         <i class="bi bi-envelope-fill"></i>
-                         rosatomacarena@outlook.com
+                         Email
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link p-0 text-body-secondary" href="tel:+54 9 11 6175-4302">
                         <i class="bi bi-telephone-fill"></i>
-                         +54 9 11 6175-4302
+                         Celular
                     </a>
                 </li>
             </ul>
