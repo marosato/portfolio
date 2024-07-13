@@ -1080,7 +1080,7 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
 
 /** TECHNOLOGY **/
 
-.tech-stack .container .tech-container {
+/* .tech-stack .container .tech-container {
   background-color: var(--bs-body-bg) !important;
 }
 
@@ -1166,7 +1166,7 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
 }
 */
 
-.logos-slide {
+/* .logos-slide {
   display: inline-block;
   animation: 35s slide infinite linear;
 }
@@ -1188,6 +1188,45 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
 
 
 
+
+.tech-stack .logos img {
+  width: 100px;
+  height: 100px;
+  animation: scroll 20s linear infinite;
+}
+
+.tech-stack .logos .slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.tech-stack .logos .slider {
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 8em 2em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translatex(-1000%)
+  }
+} */
+
+.tech-stack .logos-slide .col img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+.tech-stack .logos-slide .col img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
 
 /** EDUCATION **/
 
@@ -1293,7 +1332,6 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
   float: left;
   margin-left: -10px;
 }
-
 
 .container .card-img-top {
   width: 50px;
@@ -1474,9 +1512,6 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
   width: 11px;
   content: "";
 }
-
-
-
 
 /*  ----------------------------------------------
     |             P O R T F O L I O              |
@@ -1807,7 +1842,7 @@ transform: translateX(-50%);
     -----------------------------------------  */
 
 .contact h1 {
-color: var(--bs-primary) !important;
+  color: var(--bs-primary) !important;
 }
 
 /* ------  ------ */
