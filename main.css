@@ -1219,8 +1219,8 @@ box-shadow: 0 0 10px 5px rgba(255, 0, 149, 0.5),
 } */
 
 .tech-stack .logos-slide .col img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   transition: transform 0.3s;
 }
 
