@@ -45,7 +45,6 @@ h5,
 h6 * {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
-  letter-spacing: 0.06em;
 }
 
 p {
