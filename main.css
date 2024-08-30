@@ -195,9 +195,7 @@ nav .navbar-buttons .btn:hover {
     |             H O M E             |
     -----------------------------------  */
 
-#home {
-
-}
+#home {}
 
 
 .tech-stack .card {
@@ -231,6 +229,17 @@ nav .navbar-buttons .btn:hover {
 #portfolio {
   position: relative;
 }
+
+#portfolio h2 {
+  color: var(--bs-primary) !important;
+}
+
+#portfolio svg {
+  color: var(--bs-primary) !important;
+  width: 20px;
+  height: 20px;
+}
+
 
 #portfolio .card {
   background-color: var(--bs-tertiary-bg) !important;
