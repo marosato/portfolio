@@ -45,10 +45,11 @@ h5,
 h6 * {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
-  text-transform: uppercase ;
+  text-transform: uppercase;
 }
 
-p, small {
+p,
+small {
   font-family: var(--bs-font-paragraph) !important;
   color: var(--bs-secondary-color) !important;
 }
@@ -128,7 +129,60 @@ p, small {
 
 
 
+/*  ---------------------------------------
+    |             N A V B A R             |
+    ---------------------------------------  */
 
+nav .navbar-brand {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color) !important;
+  font-family: var(--bs-font-title) !important;
+  letter-spacing: 0.06em;
+}
+
+nav,
+nav a,
+nav .nav-link {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color) !important;
+  font-family: var(--bs-font-paragraph) !important;
+}
+
+nav .nav-link svg {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color) !important;
+  font-family: var(--bs-font-paragraph) !important;
+  width: 24px;
+  height: 24px;
+}
+
+nav .navbar-icon svg {
+  color: var(--bs-secondary-color) !important;
+  height: 30px;
+  cursor: pointer;
+}
+
+nav .navbar-toggler {
+  color: var(--bs-secondary-color) !important;
+  border-color: var(--bs-secondary-color);
+  border: none;
+}
+
+/* REGISTER BUTTONS */
+nav .navbar-buttons .btn,
+nav .navbar-buttons .btn:hover {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color) !important;
+  border-color: var(--bs-secondary-color);
+  font-weight: 500;
+}
+
+nav .navbar-buttons .btn:hover {
+  background-color: var(--bs-secondary-color) !important;
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-secondary-color);
+  font-weight: 500;
+}
 
 
 
