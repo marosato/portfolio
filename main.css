@@ -1,5 +1,5 @@
 :root {
-    --bs-body-bg: #000 !important;
+  --bs-body-bg: #000 !important;
   --bs-primary: #ff0077 !important;
   --bs-secondary-color: #e0e0e0 !important;
   --bs-tertiary-bg: #161616 !important;
@@ -80,47 +80,111 @@ p {
 /* Escritorio */
 @media only screen and (min-width: 1024px) {
   body {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
   }
 
   .home {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 }
 
 /* Laptops */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 70px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 70px;
   }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
   }
 }
 
 /* Celulares */
 @media only screen and (max-width: 767px) {
   body {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
   }
 
   #home {
-      margin-top: 11px;
+    margin-top: 11px;
   }
 
   #services .services-body {
-      margin-top: 0;
+    margin-top: 0;
   }
+}
+
+
+
+.container {
+  background-color: grey;
+}
+
+
+
+#portfolio .card-movies {
+  background-image: url('img\Logo - EMME Creations.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+
+#portfolio .card-emme {
+  background-image: url('img\Logo - EMME Creations.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+
+
+/*  -----------------------------------
+    |             H O M E             |
+    -----------------------------------  */
+
+#home {
+  position: relative;
+  background-color: var(--bs-body-bg) !important;
+}
+
+#home .home-header {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color);
+}
+
+#home .card-logo {
+  background-image: url('img/Logo\ -\ EMME\ Creations.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#home .home-card {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color);
+}
+
+#home .card-tyrell {
+  background-image: url('img/EMME\ Creations\ -\ Lobo\ Blanco.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  /* font: 100 5.5rem/1.2 'Poppins', sans-serif;
+      text-align: center; */
 }
