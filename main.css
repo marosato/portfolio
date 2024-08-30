@@ -139,8 +139,7 @@ small {
     |             N A V B A R             |
     ---------------------------------------  */
 
-nav .navbar-brand,
-.nav-link {
+nav .navbar-brand {
   color: var(--bs-secondary-color) !important;
   font-family: var(--bs-font-title) !important;
   letter-spacing: 0.06em;
