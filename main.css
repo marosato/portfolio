@@ -127,28 +127,7 @@ p {
 
 
 
-.container {
-  background-color: grey;
-}
 
-
-
-#portfolio .card-movies {
-  background-image: url('img\Logo - EMME Creations.png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-}
-
-
-#portfolio .card-emme {
-  background-image: url('img\Logo - EMME Creations.png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-}
 
 
 
@@ -156,35 +135,28 @@ p {
     |             H O M E             |
     -----------------------------------  */
 
-#home {
+#portfolio {
   position: relative;
-  background-color: var(--bs-body-bg) !important;
+  background-color: var(--bs-body-bg);
 }
 
-#home .home-header {
-  background-color: var(--bs-primary) !important;
+#portfolio .card {
+  background-color: var(--bs-tertiary-bg) !important;
   color: var(--bs-secondary-color);
 }
 
-#home .card-logo {
-  background-image: url('img/Logo\ -\ EMME\ Creations.png') !important;
+#portfolio .card-movies {
+  background-image: url('img/CAC\ Movies.jpeg') !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
 }
 
-#home .home-card {
-  background-color: var(--bs-primary) !important;
-  color: var(--bs-secondary-color);
-}
-
-#home .card-tyrell {
-  background-image: url('img/EMME\ Creations\ -\ Lobo\ Blanco.png') !important;
+#portfolio .card-emme {
+  background-image: url('img/Logo\ -\ EMME\ Creations.png') !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
-  /* font: 100 5.5rem/1.2 'Poppins', sans-serif;
-      text-align: center; */
 }
