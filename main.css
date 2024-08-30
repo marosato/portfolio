@@ -200,6 +200,29 @@ nav .navbar-buttons .btn:hover {
 }
 
 
+.tech-stack .card {
+  background-image: url('Archivos/Logo - HTML (2).png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
+.tech-stack .tech-logos .col img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+.tech-stack .tech-logos .col img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
 
 /*  ---------------------------------------------
     |             P O R T F O L I O             |
