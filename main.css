@@ -232,6 +232,7 @@ nav .navbar-buttons .btn:hover {
 
 #portfolio h2 {
   color: var(--bs-primary) !important;
+  font-weight: 600;
 }
 
 #portfolio svg {
