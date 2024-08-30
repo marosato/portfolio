@@ -47,7 +47,7 @@ h6 * {
   color: var(--bs-secondary-color) !important;
 }
 
-p {
+p, small {
   font-family: var(--bs-font-paragraph) !important;
   color: var(--bs-secondary-color) !important;
 }
