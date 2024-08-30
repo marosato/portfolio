@@ -139,11 +139,12 @@ small {
     |             N A V B A R             |
     ---------------------------------------  */
 
-nav .navbar-brand {
-  background-color: var(--bs-primary) !important;
+nav .navbar-brand,
+.nav-link {
   color: var(--bs-secondary-color) !important;
   font-family: var(--bs-font-title) !important;
   letter-spacing: 0.06em;
+  font-weight: 500;
 }
 
 nav,
@@ -152,6 +153,7 @@ nav .nav-link {
   background-color: var(--bs-primary) !important;
   color: var(--bs-secondary-color) !important;
   font-family: var(--bs-font-paragraph) !important;
+  font-weight: 500;
 }
 
 nav .nav-link svg {
