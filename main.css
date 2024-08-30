@@ -305,3 +305,8 @@ footer .nav-link {
   color: var(--bs-secondary-color) !important;
   text-decoration: none;
 }
+
+footer .nav-link:hover {
+  color: var(--bs-primary) !important;
+  text-decoration: none;
+}
