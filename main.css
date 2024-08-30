@@ -263,3 +263,34 @@ nav .navbar-buttons .btn:hover {
   background-repeat: no-repeat;
   height: 500px;
 }
+
+
+
+/*  ---------------------------------------------
+    |             P O R T F O L I O             |
+    ---------------------------------------------  */
+
+
+footer {
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary-color) !important;
+  font-size: 400;
+}
+
+footer a {
+  color: var(--bs-secondary-color) !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+footer .nav-link {
+  color: var(--bs-secondary-color) !important;
+  text-decoration: none;
+  font-weight: bolder;
+}
