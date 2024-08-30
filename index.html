@@ -61,6 +61,18 @@
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"
+                            style="display: none;">
+                            <path fill-rule="evenodd"
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -226,11 +238,10 @@
                         <a href="https://emmecreations.netlify.app/" class="nav-link d-inline-flex align-items-center"
                             type="button" target="_blank">
                             <h2> EMME Creations </h2>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-up-right-square-fill ms-2 mb-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-arrow-up-right-circle ms-2 mb-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
                             </svg>
                         </a>
                         <p> Es una marca especializada en brindar soluciones digitales como la creación de
@@ -402,6 +413,38 @@
         </ul>
         <p class="text-center text-body-secondary fw-bold"> Macarena Ayelén Rosato </p>
     </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Navbar Toggler Animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggler = document.querySelector(".navbar-toggler");
+            const listIcon = toggler.querySelector(".bi-list");
+            const xIcon = toggler.querySelector(".bi-x");
+
+            toggler.addEventListener("click", function () {
+                if (toggler.getAttribute("aria-expanded") === "true") {
+                    listIcon.style.display = "none";
+                    xIcon.style.display = "block";
+                } else {
+                    listIcon.style.display = "block";
+                    xIcon.style.display = "none";
+                }
+            });
+        });
+
+        // Verifica si un usuario abrió o cerró mi página web
+        function handleVisibility() {
+            if (document.visibilityState === "visible") {
+                console.log("El usuario está viendo tu página");
+            } else {
+                console.log("El usuario ha cerrado tu página");
+            }
+        }
+        document.addEventListener("visibilitychange", handleVisibility);
+    </script>
 
 </body>
 
