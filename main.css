@@ -41,17 +41,23 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 * {
+h5 * {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
   text-transform: uppercase !important;
+}
+
+h6 {
+  font-family: var(--bs-font-paragraph) !important;
+  color: var(--bs-primary) !important;
+  font-size: bolder !important;
 }
 
 p,
 small {
   font-family: var(--bs-font-paragraph) !important;
   color: var(--bs-secondary-color) !important;
+  font-size: bolder !important;
 }
 
 
