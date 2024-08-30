@@ -199,6 +199,19 @@ nav .navbar-buttons .btn:hover {
 #home {}
 
 
+
+
+
+
+#work .list-group h5 {
+  color: var(--bs-primary) !important;
+}
+
+
+/*  -----------------------------------
+    |             T E C H             |
+    -----------------------------------  */
+
 .tech-stack .card {
   background-image: url('Archivos/Logo - HTML (2).png') !important;
   background-size: cover;
@@ -207,10 +220,6 @@ nav .navbar-buttons .btn:hover {
   width: 200px;
   height: 200px;
 }
-
-
-
-
 
 .tech-stack .tech-logos .col img {
   width: 80px;
@@ -294,6 +303,7 @@ footer .social-media .nav-link svg {
   height: 20px;
   color: var(--bs-secondary-color) !important;
 }
+
 footer .social-media .nav-link svg:hover {
   width: 20px;
   height: 20px;
