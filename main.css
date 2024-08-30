@@ -266,31 +266,42 @@ nav .navbar-buttons .btn:hover {
 
 
 
-/*  ---------------------------------------------
-    |             P O R T F O L I O             |
-    ---------------------------------------------  */
+/*  ---------------------------------------
+    |             F O O T E R             |
+    ---------------------------------------  */
 
 
 footer {
-  background-color: var(--bs-primary);
-  color: var(--bs-secondary-color) !important;
-  font-size: 400;
+  font-family: var(--bs-font-title);
+  color: var(--bs-secondary-color);
 }
 
-footer a {
-  color: var(--bs-secondary-color) !important;
+footer .footer-logo {
+  color: var(--bs-secondary-color);
   font-weight: 600;
   text-decoration: none;
 }
 
-footer svg {
+footer .footer-logo:hover {
+  color: var(--bs-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*  Social Media */
+footer .social-media .nav-link svg {
   width: 20px;
   height: 20px;
+  color: var(--bs-secondary-color) !important;
+}
+footer .social-media .nav-link svg:hover {
+  width: 20px;
+  height: 20px;
+  color: var(--bs-primary) !important;
 }
 
 
 footer .nav-link {
   color: var(--bs-secondary-color) !important;
   text-decoration: none;
-  font-weight: bolder;
 }
