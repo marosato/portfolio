@@ -297,16 +297,23 @@ footer .footer-logo:hover {
   text-decoration: none;
 }
 
+/* Logo Icons */
+footer .logo-icons .nav-link svg {
+  width: 30px;
+  height: 30px;
+  color: var(--bs-secondary-color) !important;
+}
+footer .logo-icons .nav-link svg:hover {
+  color: var(--bs-primary) !important;
+}
+
 /*  Social Media */
 footer .social-media .nav-link svg {
   width: 20px;
   height: 20px;
   color: var(--bs-secondary-color) !important;
 }
-
 footer .social-media .nav-link svg:hover {
-  width: 20px;
-  height: 20px;
   color: var(--bs-primary) !important;
 }
 
