@@ -73,6 +73,7 @@ small {
 ::-webkit-scrollbar-thumb {
   background-color: var(--bs-primary);
 }
+
 /* ::-webkit-scrollbar-thumb:hover {
   background: #555;
 } */
@@ -219,11 +220,39 @@ nav .navbar-buttons .btn:hover {
 
 
 
+#trajectory .list-group .list-group-item {
+  background-color: var();
+}
 
 
-#work .list-group h5 {
+
+#trajectory .list-group .list-group-item .list-link svg:hover {
   color: var(--bs-primary) !important;
 }
+
+#trajectory .list-group .list-group-item .list-link:hover {
+  color: var(--bs-primary);
+}
+
+#trajectory .list-group .list-group-item .list-link {
+  color: var(--bs-secondary-color);
+  text-decoration: none;
+}
+
+#trajectory .list-group .list-group-item small,
+#trajectory .list-group .list-group-item p {
+  color: var(--bs-secondary-color) !important;
+}
+
+#trajectory .list-group h5 {
+  color: var(--bs-primary) !important;
+}
+
+
+
+
+
+
 
 
 /*  -----------------------------------
