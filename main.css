@@ -247,6 +247,7 @@ nav .navbar-buttons .btn:hover {
 
 #portfolio .portfolio-link, #portfolio .portfolio-link svg {
   color: var(--bs-primary) !important;
+  text-decoration: none;
 }
 
 
