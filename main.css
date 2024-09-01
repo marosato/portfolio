@@ -211,13 +211,9 @@ nav .navbar-buttons .btn:hover {
 }
 
 
-/*  -----------------------------------
-    |             H O M E             |
-    -----------------------------------  */
-
-#home {}
-
-
+/*  -----------------------------------------------
+    |             T R A J E C T O R Y             |
+    -----------------------------------------------  */
 
 
 #trajectory .list-group .list-group-item {
@@ -225,18 +221,10 @@ nav .navbar-buttons .btn:hover {
 }
 
 
-
-#trajectory .list-group .list-group-item .list-link svg:hover {
-  color: var(--bs-primary) !important;
-}
-
-#trajectory .list-group .list-group-item .list-link:hover {
-  color: var(--bs-primary);
-}
-
 #trajectory .list-group .list-group-item .list-link {
   color: var(--bs-secondary-color);
   text-decoration: none;
+  font-size: bolder !important;
 }
 
 #trajectory .list-group .list-group-item small,
@@ -247,6 +235,16 @@ nav .navbar-buttons .btn:hover {
 #trajectory .list-group h5 {
   color: var(--bs-primary) !important;
 }
+
+#trajectory .list-group .list-group-item .list-link svg:hover {
+  color: var(--bs-primary) !important;
+}
+
+#trajectory .list-group .list-group-item .list-link:hover {
+  color: var(--bs-primary);
+}
+
+
 
 
 
