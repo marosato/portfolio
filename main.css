@@ -279,10 +279,11 @@ nav .navbar-buttons .btn:hover {
     |             F O O T E R             |
     ---------------------------------------  */
 
-
 footer {
   font-family: var(--bs-font-title);
   color: var(--bs-secondary-color);
+  justify-content: center;
+  text-align: left;
 }
 
 footer .footer-logo {
