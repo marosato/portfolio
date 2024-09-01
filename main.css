@@ -60,27 +60,19 @@ small {
   font-size: bolder !important;
 }
 
+/* --- SCROLL-BAR --- */
 
-
-
-
-
-/* width */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background-color: var(--bs-body-bg);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: var(--bs-primary);
 }
-
-/* Hover */
 /* ::-webkit-scrollbar-thumb:hover {
   background: #555;
 } */
@@ -271,7 +263,8 @@ nav .navbar-buttons .btn:hover {
   font-weight: 600;
 }
 
-#portfolio .portfolio-link, #portfolio .portfolio-link svg {
+#portfolio .portfolio-link,
+#portfolio .portfolio-link svg {
   color: var(--bs-primary) !important;
   text-decoration: none;
 }
