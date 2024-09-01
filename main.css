@@ -245,10 +245,8 @@ nav .navbar-buttons .btn:hover {
   font-weight: 600;
 }
 
-#portfolio svg {
+#portfolio .portfolio-link, #portfolio .portfolio-link svg {
   color: var(--bs-primary) !important;
-  width: 20px;
-  height: 20px;
 }
 
 
