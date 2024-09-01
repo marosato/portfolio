@@ -61,6 +61,32 @@ small {
 }
 
 
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--bs-body-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--bs-primary);
+}
+
+/* Hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
+
+
 #logo {
   border-radius: 100%;
   width: 50px;
