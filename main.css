@@ -3,19 +3,9 @@
   --bs-primary: #ff0077 !important;
   --bs-secondary-color: #e0e0e0 !important;
   --bs-tertiary-bg: #161616 !important;
-
   --bs-font-title: 'Poppins' !important;
-  --bs-font-paragraph: 'Poppins' !important;
+  /* --bs-font-paragraph: 'Poppins' !important; */
 }
-
-/*
-- Marrón: #140408
-- Rojo: #43071a
-- Marrón claro: #65474e
-- Rosa medio oscuro: #a46a7a
-- Rosa medio claro: #e9ded9
-- Rosa claro: #eee2e4 - Rosa claro: #f2edec
-*/
 
 * {
   box-sizing: border-box;
