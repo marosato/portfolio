@@ -220,6 +220,10 @@ nav .navbar-buttons .btn:hover {
   background-color: var();
 }
 
+#trajectory .list-group .list-group-item .card-title {
+  font-size: 1.5em;
+}
+
 
 #trajectory .list-group .list-group-item .list-link {
   color: var(--bs-secondary-color);
