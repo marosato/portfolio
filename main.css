@@ -220,8 +220,6 @@ nav .navbar-buttons .btn:hover {
   background-color: var();
 }
 
-
-
 #trajectory .list-group .list-group-item .list-link {
   color: var(--bs-secondary-color);
   text-decoration: none;
