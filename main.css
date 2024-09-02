@@ -223,7 +223,6 @@ nav .navbar-buttons .btn:hover {
 #trajectory .list-group .list-group-item .list-link {
   color: var(--bs-secondary-color);
   text-decoration: none;
-  font-size: bolder !important;
 }
 
 #trajectory .list-group .list-group-item small,
