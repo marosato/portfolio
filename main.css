@@ -210,14 +210,12 @@ nav .navbar-buttons .btn:hover {
   font-weight: 500;
 }
 
-
 /*  -----------------------------------------------
     |             T R A J E C T O R Y             |
     -----------------------------------------------  */
 
-
-#trajectory .list-group .list-group-item {
-  background-color: var();
+#trajectory .list-group .list-group-item .card-title:hover {
+  color: var(--bs-primary) !important;
 }
 
 #trajectory .list-group .list-group-item .list-link {
@@ -242,11 +240,9 @@ nav .navbar-buttons .btn:hover {
   color: var(--bs-primary);
 }
 
-
 /*  -----------------------------------
     |             T E C H             |
     -----------------------------------  */
-
 
 .tech-stack .tech-logos .col img {
   width: 90px;
@@ -257,7 +253,6 @@ nav .navbar-buttons .btn:hover {
 .tech-stack .tech-logos .col img:hover {
   transform: rotate(10deg) scale(1.1);
 }
-
 
 /*  ---------------------------------------------
     |             P O R T F O L I O             |
