@@ -247,14 +247,6 @@ nav .navbar-buttons .btn:hover {
     |             T E C H             |
     -----------------------------------  */
 
-.tech-stack .card {
-  background-image: url('Archivos/Logo - HTML (2).png') !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-}
 
 .tech-stack .tech-logos .col img {
   width: 90px;
