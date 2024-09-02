@@ -37,14 +37,14 @@ h5 * {
 }
 
 h6 {
-  font-family: var(--bs-font-paragraph) !important;
+  font-family: var(--bs-font-title) !important;
   color: var(--bs-primary) !important;
   font-size: bolder !important;
 }
 
 p,
 small {
-  font-family: var(--bs-font-paragraph) !important;
+  font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
   font-size: bolder !important;
 }
