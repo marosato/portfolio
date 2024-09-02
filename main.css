@@ -36,14 +36,13 @@ h5 * {
   color: var(--bs-secondary-color) !important;
 }
 
-h6 {
+h6, strong {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-primary) !important;
   font-size: bolder !important;
 }
 
-p,
-small {
+p, small {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
   font-size: bolder !important;
