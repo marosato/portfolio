@@ -76,7 +76,19 @@ small {
   height: 50px;
 }
 
+/* .btn {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color) !important;
+  border-color: var(--bs-secondary-color) !important;
+  font-weight: 600;
+}
 
+.btn:hover {
+  background-color: var(--bs-secondary-color) !important;
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-secondary-color);
+  font-weight: 600;
+} */
 
 .bi {
   color: var(--bs-secondary-color) !important;
