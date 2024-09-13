@@ -269,7 +269,6 @@ nav .navbar-buttons .btn:hover {
   text-decoration: none;
 }
 
-
 #portfolio .card {
   background-color: var(--bs-tertiary-bg) !important;
   color: var(--bs-secondary-color);
@@ -290,8 +289,6 @@ nav .navbar-buttons .btn:hover {
   background-repeat: no-repeat;
   height: 500px;
 }
-
-
 
 /*  ---------------------------------------
     |             F O O T E R             |
