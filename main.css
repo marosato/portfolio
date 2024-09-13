@@ -206,8 +206,8 @@ nav .navbar-buttons .btn:hover {
 
 #trajectory .list-group .list-group-item {
   background-color: var(--bs-body-bg) !important;
-  border-width: 3px;
-  border-color: var(--bs-primary);
+  border-width: 2px;
+  border-color: var(--bs-secondary-color);
 }
 
 #trajectory .list-group .list-group-item .card-title:hover {
