@@ -36,13 +36,15 @@ h5 * {
   color: var(--bs-secondary-color) !important;
 }
 
-h6, strong {
+h6,
+strong {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-primary) !important;
   font-size: bolder !important;
 }
 
-p, small {
+p,
+small {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
   font-size: bolder !important;
@@ -201,6 +203,12 @@ nav .navbar-buttons .btn:hover {
 /*  -----------------------------------------------
     |             T R A J E C T O R Y             |
     -----------------------------------------------  */
+
+#trajectory .list-group .list-group-item {
+  background-color: var(--bs-body-bg) !important;
+  border-width: 3px;
+  border-color: var(--bs-primary);
+}
 
 #trajectory .list-group .list-group-item .card-title:hover {
   color: var(--bs-primary) !important;
