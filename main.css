@@ -140,6 +140,15 @@ small {
   #services .services-body {
     margin-top: 0;
   }
+
+  footer .col, footer a, footer ul {
+    justify-content: center;
+  }
+
+  footer .col {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 
@@ -331,7 +340,7 @@ footer .social-media .nav-link svg:hover {
   color: var(--bs-primary) !important;
 }
 
-
+y
 
 
 footer .nav-link {
