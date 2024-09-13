@@ -151,8 +151,6 @@ small {
   }
 }
 
-
-
 /*  ---------------------------------------
     |             N A V B A R             |
     ---------------------------------------  */
@@ -310,6 +308,11 @@ footer {
   text-align: left;
 }
 
+footer .nav-link:hover {
+  color: var(--bs-primary) !important;
+  text-decoration: none;
+}
+
 footer .footer-logo {
   color: var(--bs-secondary-color);
   font-weight: 600;
@@ -338,17 +341,4 @@ footer .social-media .nav-link svg {
 
 footer .social-media .nav-link svg:hover {
   color: var(--bs-primary) !important;
-}
-
-y
-
-
-footer .nav-link {
-  color: var(--bs-secondary-color) !important;
-  text-decoration: none;
-}
-
-footer .nav-link:hover {
-  color: var(--bs-primary) !important;
-  text-decoration: none;
 }
