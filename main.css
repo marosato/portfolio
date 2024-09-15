@@ -80,14 +80,14 @@ small {
   background-color: none !important;
   color: var(--bs-secondary-color) !important;
   border-color: var(--bs-secondary-color) !important;
-  font-weight: 600;
+  font-weight: 400 !important;
 }
 
 .btn:hover, .btn svg:hover {
   background-color: none !important;
   color: var(--bs-primary) !important;
   border-color: var(--bs-secondary-color);
-  font-weight: 600;
+  font-weight: 400 !important;
 }
 
 .bi {
