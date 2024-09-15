@@ -83,7 +83,7 @@ small {
   font-weight: 600;
 }
 
-.btn:hover {
+.btn:hover, .btn svg:hover {
   background-color: none !important;
   color: var(--bs-primary) !important;
   border-color: var(--bs-secondary-color);
