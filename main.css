@@ -77,12 +77,14 @@ small {
 }
 
 .btn {
+  background-color: var(--bs-body-bg) !important;
   color: var(--bs-secondary-color) !important;
   border-color: var(--bs-secondary-color) !important;
   font-weight: 400 !important;
 }
 
 .btn:hover, .btn svg:hover {
+  background-color: var(--bs-body-bg) !important;
   color: var(--bs-primary) !important;
   border-color: var(--bs-secondary-color);
   font-weight: 400 !important;
