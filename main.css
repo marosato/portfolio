@@ -217,6 +217,10 @@ nav .navbar-buttons .btn:hover {
   border-color: var(--bs-secondary-color);
 }
 
+.card-title {
+  color: var(--bs-secondary-color) !important;
+}
+
 #trajectory .list-group .list-group-item .card-title:hover {
   color: var(--bs-primary) !important;
 }
