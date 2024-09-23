@@ -165,7 +165,7 @@ nav .navbar-brand {
 nav,
 nav a,
 nav .nav-link {
-  background-color: var(--bs-primary) !important;
+  background-color: var(--bs-body-bg) !important;
   color: var(--bs-secondary-color) !important;
   font-family: var(--bs-font-paragraph) !important;
   font-weight: 500;
@@ -212,7 +212,7 @@ nav .navbar-buttons .btn:hover {
     -----------------------------------------------  */
 
 #trajectory .list-group .list-group-item {
-  background-color: var(--bs-body-bg) !important;
+  background-color: #161616 !important;
   border-width: 2px;
   border-color: var(--bs-secondary-color);
 }
