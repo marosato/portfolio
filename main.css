@@ -94,6 +94,15 @@ small {
   color: var(--bs-secondary-color) !important;
 }
 
+/* Logo Icons */
+.logo-icons .nav-link svg {
+  color: var(--bs-secondary-color) !important;
+}
+
+.logo-icons .nav-link svg:hover {
+  color: var(--bs-primary) !important;
+}
+
 /* Escritorio */
 @media only screen and (min-width: 1024px) {
   body {
@@ -349,14 +358,7 @@ footer .footer-logo:hover {
   text-decoration: none;
 }
 
-/* Logo Icons */
-footer .logo-icons .nav-link svg {
-  color: var(--bs-secondary-color) !important;
-}
 
-footer .logo-icons .nav-link svg:hover {
-  color: var(--bs-primary) !important;
-}
 
 /*  Social Media */
 footer .social-media .nav-link svg {
