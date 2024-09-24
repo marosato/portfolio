@@ -287,7 +287,8 @@ nav .navbar-buttons .btn:hover {
   width: 70px;
   height: 70px;
   transition: transform 0.3s;
-  color: grey !important;
+
+  filter: saturate(30%);
 }
 
 #tech-logos .col img:hover {
