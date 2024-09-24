@@ -207,6 +207,26 @@ nav .navbar-buttons .btn:hover {
   font-weight: 500;
 }
 
+
+
+#about .tech-stack .tech-logos .col img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+}
+
+#about .tech-stack .tech-logos .col img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+#about .logo-icons .nav-link svg {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
 /*  -----------------------------------------------
     |             T R A J E C T O R Y             |
     -----------------------------------------------  */
