@@ -83,7 +83,8 @@ small {
   font-weight: 400 !important;
 }
 
-.btn:hover, .btn svg:hover {
+.btn:hover,
+.btn svg:hover {
   color: var(--bs-primary) !important;
   border-color: var(--bs-secondary-color);
   font-weight: 400 !important;
@@ -149,7 +150,9 @@ small {
     margin-top: 0;
   }
 
-  footer .col, footer a, footer ul {
+  footer .col,
+  footer a,
+  footer ul {
     justify-content: center;
   }
 
@@ -278,6 +281,18 @@ nav .navbar-buttons .btn:hover {
 /*  -----------------------------------
     |             T E C H             |
     -----------------------------------  */
+
+
+#tech-logos .col img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+  color: grey !important;
+}
+
+#tech-logos .col img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
 
 .tech-stack .tech-logos .col img {
   width: 90px;
