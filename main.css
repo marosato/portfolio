@@ -274,18 +274,19 @@ nav .navbar-buttons .btn:hover {
     |             T E C H             |
     -----------------------------------  */
 
-#tech-logos .col img {
+
+
+#tech-logos .col img, img {
   width: 70px;
   height: 70px;
   transition: transform 0.3s;
-  filter: saturate(30%);
 }
 
-#tech-logos .col img:hover {
+#tech-logos .col img:hover, img:hover {
   transform: rotate(10deg) scale(1.1);
 }
 
-.tech-stack .tech-logos .col img {
+.tech-stack .tech-logos img {
   width: 90px;
   height: 90px;
   transition: transform 0.3s;
