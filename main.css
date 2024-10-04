@@ -276,25 +276,8 @@ nav .navbar-buttons .btn:hover {
 
 
 
-#tech-logos .col img, img {
-  width: 70px;
-  height: 70px;
-  transition: transform 0.3s;
-}
 
-#tech-logos .col img:hover, img:hover {
-  transform: rotate(10deg) scale(1.1);
-}
 
-.tech-stack .tech-logos img {
-  width: 90px;
-  height: 90px;
-  transition: transform 0.3s;
-}
-
-.tech-stack .tech-logos .col img:hover {
-  transform: rotate(10deg) scale(1.1);
-}
 
 /*  ---------------------------------------------
     |             P O R T F O L I O             |
