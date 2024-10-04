@@ -335,6 +335,16 @@ nav .navbar-buttons .btn:hover {
   height: 500px;
 }
 
+#portfolio .card-kefir {
+  background-image: url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2024/05/23/kefir-in-glass-jar-and-on-wooden-spoon-on-burlap-bag.jpg.rend.hgtvcom.1280.960.suffix/1716467858997.jpeg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+
+
 /*  ---------------------------------------
     |             F O O T E R             |
     ---------------------------------------  */
