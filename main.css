@@ -195,6 +195,7 @@ nav .nav-link {
   color: var(--bs-secondary-color) !important;
   font-family: var(--bs-font-paragraph) !important;
   font-weight: 500;
+  font-size: large;
 }
 
 
