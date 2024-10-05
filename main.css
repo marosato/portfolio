@@ -226,23 +226,7 @@ nav .navbar-icon svg {
   color: var(--bs-secondary-color) !important;
   height: 30px;
   cursor: pointer;
-}
-
-/* REGISTER BUTTONS */
-nav .navbar-buttons .btn,
-nav .navbar-buttons .btn:hover {
-  background-color: var(--bs-primary) !important;
-  color: var(--bs-secondary-color) !important;
-  border-color: var(--bs-secondary-color);
-  font-weight: 500;
-}
-
-nav .navbar-buttons .btn:hover {
-  background-color: var(--bs-secondary-color) !important;
-  color: var(--bs-primary) !important;
-  border-color: var(--bs-secondary-color);
-  font-weight: 500;
-}
+}   
 
 /*  -------------------------------------
     |             A B O U T             |
