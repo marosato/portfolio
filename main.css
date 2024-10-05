@@ -179,9 +179,14 @@ small {
     ---------------------------------------  */
 
 nav .navbar-brand {
-  color: var(--bs-secondary-color) !important;
+  color: var(--bs-primary) !important;
   font-family: var(--bs-font-title) !important;
   letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+nav .navbar-brand:hover {
+  color: var(--bs-secondary-color) !important;
   font-weight: 500;
 }
 
