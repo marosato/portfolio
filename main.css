@@ -200,7 +200,6 @@ nav .nav-link {
   font-size: large;
 }
 
-
 nav .nav-link:hover {
   color: var(--bs-primary) !important;
   font-family: var(--bs-font-paragraph) !important;
@@ -215,16 +214,18 @@ nav .nav-link svg {
   height: 24px;
 }
 
-nav .navbar-icon svg {
-  color: var(--bs-secondary-color) !important;
-  height: 30px;
-  cursor: pointer;
-}
+/* NAVBAR TOGGLER */
 
 nav .navbar-toggler {
   color: var(--bs-secondary-color) !important;
   border-color: var(--bs-secondary-color);
   border: none;
+}
+
+nav .navbar-icon svg {
+  color: var(--bs-secondary-color) !important;
+  height: 30px;
+  cursor: pointer;
 }
 
 /* REGISTER BUTTONS */
