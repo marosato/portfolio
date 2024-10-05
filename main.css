@@ -164,6 +164,16 @@ small {
     margin-top: 0;
   }
 
+  #tech-stack .card img {
+    width: 10px;
+    height: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s;
+    /* filter: saturate(30%); */
+  }
+
+
+
   footer .col,
   footer a,
   footer ul {
