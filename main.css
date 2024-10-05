@@ -50,8 +50,6 @@ small {
   font-size: bolder !important;
 }
 
-
-
 /* --- SCROLL-BAR --- */
 
 ::-webkit-scrollbar {
@@ -105,6 +103,9 @@ small {
   color: var(--bs-primary) !important;
 }
 
+/*  -------------------------------------
+    |             M E D I A             |
+    -------------------------------------  */
 
 /* Escritorio */
 @media only screen and (min-width: 1024px) {
@@ -145,6 +146,17 @@ small {
     padding: 10px;
   }
 
+  nav,
+  nav a,
+  nav .nav-link {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-secondary-color) !important;
+    font-family: var(--bs-font-paragraph) !important;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+  }
+
   #home {
     margin-top: 11px;
   }
@@ -181,6 +193,13 @@ nav a,
 nav .nav-link {
   background-color: var(--bs-body-bg) !important;
   color: var(--bs-secondary-color) !important;
+  font-family: var(--bs-font-paragraph) !important;
+  font-weight: 500;
+}
+
+
+nav .nav-link:hover {
+  color: var(--bs-primary) !important;
   font-family: var(--bs-font-paragraph) !important;
   font-weight: 500;
 }
