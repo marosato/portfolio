@@ -241,11 +241,9 @@ nav .navbar-icon svg {
   font-family: var(--bs-font-paragraph) !important;
 }
 
-/*  -------------------------------------
-    |             A B O U T             |
-    -------------------------------------  */
-
-
+/*  -----------------------------------------
+    |             C O U R S E S             |
+    -----------------------------------------  */
 
 #courses .card {
   text-align: center !important;
@@ -256,7 +254,26 @@ nav .navbar-icon svg {
   height: 400px;
 }
 
+/*  -----------------------------------
+    |             W O R K             |
+    -----------------------------------  */
 
+#work .card {
+  text-align: center !important;
+}
+
+#work .card a {
+  color: var(--bs-secondary-color);
+}
+
+#work .card a:hover {
+  color: var(--bs-primary);
+}
+
+#work .card img {
+  width: auto;
+  height: 400px;
+}
 
 /*  -----------------------------------------------
     |             T R A J E C T O R Y             |
