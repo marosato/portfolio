@@ -118,7 +118,7 @@ small {
   #home {
     margin-top: 60px;
   }
-  
+
 }
 
 /* Laptops */
@@ -230,7 +230,7 @@ nav .navbar-icon svg {
   color: var(--bs-secondary-color) !important;
   height: 30px;
   cursor: pointer;
-}   
+}
 
 /*  -------------------------------------
     |             A B O U T             |
@@ -240,6 +240,23 @@ nav .navbar-icon svg {
   color: var(--bs-primary) !important;
   font-family: var(--bs-font-paragraph) !important;
 }
+
+/*  -------------------------------------
+    |             A B O U T             |
+    -------------------------------------  */
+
+
+
+#courses .card {
+  text-align: center !important;
+}
+
+#courses .card img {
+  width: auto;
+  height: 400px;
+}
+
+
 
 /*  -----------------------------------------------
     |             T R A J E C T O R Y             |
