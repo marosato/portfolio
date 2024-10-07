@@ -164,9 +164,6 @@ small {
   #tech-stack .card img {
     width: 70px !important;
     height: 70px !important;
-    margin-top: 30px;
-    transition: transform 0.3s;
-    /* filter: saturate(30%); */
   }
 
   footer .col,
