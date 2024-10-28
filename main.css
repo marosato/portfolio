@@ -34,6 +34,7 @@ h4,
 h5 * {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
+  font-weight: 600 !important;
 }
 
 h6,
