@@ -69,8 +69,6 @@ small {
   background: #555;
 } */
 
-
-
 #logo {
   border-radius: 100%;
   width: 50px;
@@ -236,6 +234,10 @@ nav .navbar-icon svg {
 #about a {
   color: var(--bs-primary) !important;
   font-family: var(--bs-font-paragraph) !important;
+}
+
+#about p {
+  text-wrap: balance;
 }
 
 /*  -----------------------------------------
