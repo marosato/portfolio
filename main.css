@@ -116,8 +116,6 @@ small {
     padding: 10px;
   }
 
-
-
 }
 
 /* Laptops */
@@ -323,8 +321,8 @@ nav .navbar-icon svg {
 }
 
 #tech-stack .card img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   margin-top: 30px;
   transition: transform 0.3s;
   /* filter: saturate(30%); */
@@ -345,6 +343,10 @@ nav .navbar-icon svg {
 
 #portfolio {
   position: relative;
+}
+
+#portfolio .container-fluid {
+  text-align: center;
 }
 
 #portfolio h2 {
