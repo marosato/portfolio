@@ -240,6 +240,12 @@ nav .navbar-icon svg {
   text-wrap: balance;
 }
 
+
+#about .about-body .container-fluid {
+    padding: 0vh !important;
+    text-align: center;
+}
+
 /*  -----------------------------------------
     |             C O U R S E S             |
     -----------------------------------------  */
