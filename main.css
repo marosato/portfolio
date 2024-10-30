@@ -231,15 +231,14 @@ nav .navbar-icon svg {
     |             A B O U T             |
     -------------------------------------  */
 
-#about a {
+#about .about-body a {
   color: var(--bs-primary) !important;
   font-family: var(--bs-font-paragraph) !important;
 }
 
-#about p {
+#about .about-body p {
   text-wrap: balance;
 }
-
 
 #about .about-body .container-fluid {
     padding: 0vh !important;
