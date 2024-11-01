@@ -378,7 +378,6 @@ nav .navbar-icon svg {
 #portfolio .card {
   background-color: var(--bs-tertiary-bg);
   color: var(--bs-secondary-color);
-  height: var(--bs-card-size) !important;
 }
 
 #portfolio .card-movies {
