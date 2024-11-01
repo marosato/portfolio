@@ -158,7 +158,7 @@ small {
     margin-top: 40px;
   }
 
-  #tech-stack .card img {
+  #tech-stack .card-tech img {
     width: 50px !important;
     height: 50px !important;
   }
@@ -326,8 +326,8 @@ nav .navbar-icon svg {
     -----------------------------------  */
 
 #tech-stack .card-tech {
-  text-align: center;
-  text-wrap: wrap;
+  text-align: center !important;
+  text-wrap: wrap !important;
 }
 
 #tech-stack .card-tech h5, #tech-stack .card-tech p {
