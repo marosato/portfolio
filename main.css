@@ -328,6 +328,7 @@ nav .navbar-icon svg {
 #tech-stack .card-tech {
   text-align: center !important;
   text-wrap: wrap !important;
+  color: var(--bs-secondary-color) !important;
 }
 
 #tech-stack .card-tech h5, #tech-stack .card-tech p {
