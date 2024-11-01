@@ -4,8 +4,11 @@
   --bs-secondary-color: #e0e0e0 !important;
   --bs-tertiary-bg: #161616 !important;
   --bs-font-title: 'Poppins' !important;
-  /* --bs-font-paragraph: 'Poppins' !important; */
+
+  /* --bs-card-size: 400px; */
 }
+
+  /* --bs-font-paragraph: 'Poppins' !important; */
 
 * {
   box-sizing: border-box;
@@ -20,7 +23,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 head {
@@ -339,7 +342,6 @@ nav .navbar-icon svg {
   transform: rotate(10deg) scale(1.1);
 }
 
-
 #tech-stack .col img:hover {
   transform: rotate(10deg) scale(1.1);
 }
@@ -357,19 +359,21 @@ nav .navbar-icon svg {
 }
 
 #portfolio h2 {
-  color: var(--bs-primary) !important;
+  color: var(--bs-primary);
   font-weight: 600;
 }
 
 #portfolio .portfolio-link,
 #portfolio .portfolio-link svg {
-  color: var(--bs-primary) !important;
+  color: var(--bs-primary);
   text-decoration: none;
 }
 
+#portfolio .portfolio-card,
 #portfolio .card {
-  background-color: var(--bs-tertiary-bg) !important;
+  background-color: var(--bs-tertiary-bg);
   color: var(--bs-secondary-color);
+  height: var(--bs-card-size) !important;
 }
 
 #portfolio .card-movies {
@@ -377,7 +381,7 @@ nav .navbar-icon svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: var(--bs-card-size) !important;
 }
 
 #portfolio .card-emme {
@@ -385,7 +389,7 @@ nav .navbar-icon svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: var(--bs-card-size) !important;
 }
 
 #portfolio .card-kefir {
@@ -393,10 +397,8 @@ nav .navbar-icon svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: var(--bs-card-size) !important;
 }
-
-
 
 /*  ---------------------------------------
     |             F O O T E R             |
