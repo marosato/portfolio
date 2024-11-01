@@ -4,7 +4,6 @@
   --bs-secondary-color: #e0e0e0 !important;
   --bs-tertiary-bg: #161616 !important;
   --bs-font-title: 'Poppins' !important;
-
   --bs-card-size: 400px;
 }
 
@@ -326,11 +325,16 @@ nav .navbar-icon svg {
     |             T E C H             |
     -----------------------------------  */
 
-#tech-stack .card-tech .card {
-  align-items: center;
+#tech-stack .card-tech {
+  text-align: center;
+  text-wrap: wrap;
 }
 
-#tech-stack .card img {
+#tech-stack .card-tech h5, #tech-stack .card-tech p {
+  color: var(--bs-secondary-color) !important;
+}
+
+#tech-stack .card-tech img {
   width: 60px;
   height: 60px;
   margin-top: 30px;
@@ -338,7 +342,7 @@ nav .navbar-icon svg {
   /* filter: saturate(30%); */
 }
 
-#tech-stack .card img:hover {
+#tech-stack .card-tech img:hover {
   transform: rotate(10deg) scale(1.1);
 }
 
