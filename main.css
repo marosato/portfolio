@@ -3,7 +3,7 @@
   --bs-primary: #ff0077 !important;
   --bs-secondary-color: #e0e0e0 !important;
   --bs-tertiary-bg: #161616 !important;
-  --bs-font-title: 'Poppins' !important;
+  --bs-font-title: 'Poppins' !important; 
   --bs-card-size: 400px;
 }
 
@@ -45,6 +45,11 @@ strong {
   color: var(--bs-primary) !important;
   font-size: bolder !important;
 }
+
+ul, li {
+  font-family: var(--bs-font-title) !important;
+  color: var(--bs-secondary-color) !important;
+} 
 
 p,
 small {
@@ -385,7 +390,7 @@ nav .navbar-icon svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: var(--bs-card-size) !important;
+  /* height: var(--bs-card-size) !important; */
 }
 
 #portfolio .card-emme {
@@ -393,7 +398,7 @@ nav .navbar-icon svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: var(--bs-card-size) !important;
+  /* height: var(--bs-card-size) !important; */
 }
 
 #portfolio .card-kefir {
@@ -401,7 +406,7 @@ nav .navbar-icon svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: var(--bs-card-size) !important;
+  /* height: var(--bs-card-size) !important; */
 }
 
 /*  ---------------------------------------
