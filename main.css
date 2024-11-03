@@ -3,11 +3,11 @@
   --bs-primary: #ff0077 !important;
   --bs-secondary-color: #e0e0e0 !important;
   --bs-tertiary-bg: #161616 !important;
-  --bs-font-title: 'Poppins' !important; 
+  --bs-font-title: 'Poppins' !important;
   --bs-card-size: 400px;
 }
 
-  /* --bs-font-paragraph: 'Poppins' !important; */
+/* --bs-font-paragraph: 'Poppins' !important; */
 
 * {
   box-sizing: border-box;
@@ -46,10 +46,11 @@ strong {
   font-size: bolder !important;
 }
 
-ul, li {
+ul,
+li {
   font-family: var(--bs-font-title) !important;
   color: var(--bs-secondary-color) !important;
-} 
+}
 
 p,
 small {
@@ -152,7 +153,6 @@ small {
   nav,
   nav a,
   nav .nav-link {
-    background-color: var(--bs-body-bg) !important;
     color: var(--bs-secondary-color) !important;
     font-family: var(--bs-font-paragraph) !important;
     font-weight: 500;
@@ -234,128 +234,6 @@ nav .navbar-icon svg {
   cursor: pointer;
 }
 
-/*  -------------------------------------
-    |             A B O U T             |
-    -------------------------------------  */
-
-#about .about-body a {
-  color: var(--bs-primary) !important;
-  font-family: var(--bs-font-paragraph) !important;
-}
-
-#about .about-body p {
-  text-wrap: balance;
-}
-
-#about .about-body .container-fluid {
-    padding: 0vh !important;
-    text-align: center;
-}
-
-/*  -----------------------------------------
-    |             C O U R S E S             |
-    -----------------------------------------  */
-
-#courses .card {
-  text-align: center !important;
-}
-
-#courses .card img {
-  width: auto;
-  height: 400px;
-}
-
-/*  -----------------------------------
-    |             W O R K             |
-    -----------------------------------  */
-
-#work .card {
-  text-align: center !important;
-}
-
-#work .card a {
-  color: var(--bs-secondary-color);
-}
-
-#work .card a:hover {
-  color: var(--bs-primary);
-}
-
-#work .card img {
-  width: auto;
-  height: 400px;
-}
-
-/*  -----------------------------------------------
-    |             T R A J E C T O R Y             |
-    -----------------------------------------------  */
-
-#trajectory .list-group .list-group-item {
-  background-color: #161616 !important;
-  border-width: 2px;
-  border-color: var(--bs-secondary-color);
-}
-
-.card-title {
-  color: var(--bs-secondary-color) !important;
-}
-
-#trajectory .list-group .list-group-item .card-title:hover {
-  color: var(--bs-primary) !important;
-}
-
-#trajectory .list-group .list-group-item .list-link {
-  color: var(--bs-secondary-color);
-  text-decoration: none;
-}
-
-#trajectory .list-group .list-group-item small,
-#trajectory .list-group .list-group-item p {
-  color: var(--bs-secondary-color) !important;
-}
-
-#trajectory .list-group h5 {
-  color: var(--bs-primary) !important;
-}
-
-#trajectory .list-group .list-group-item .list-link svg:hover {
-  color: var(--bs-primary) !important;
-}
-
-#trajectory .list-group .list-group-item .list-link:hover {
-  color: var(--bs-primary);
-}
-
-/*  -----------------------------------
-    |             T E C H             |
-    -----------------------------------  */
-
-#tech-stack .card-tech {
-  text-align: center !important;
-  text-wrap: wrap !important;
-  color: var(--bs-secondary-color) !important;
-}
-
-#tech-stack .card-tech h5, #tech-stack .card-tech p {
-  color: var(--bs-secondary-color) !important;
-}
-
-#tech-stack .card-tech img {
-  width: 60px;
-  height: 60px;
-  margin-top: 30px;
-  transition: transform 0.3s;
-  /* filter: saturate(30%); */
-}
-
-#tech-stack .card-tech img:hover {
-  transform: rotate(10deg) scale(1.1);
-}
-
-#tech-stack .col img:hover {
-  transform: rotate(10deg) scale(1.1);
-}
-
 /*  ---------------------------------------------
     |             P O R T F O L I O             |
     ---------------------------------------------  */
@@ -407,6 +285,91 @@ nav .navbar-icon svg {
   background-position: center;
   background-repeat: no-repeat;
   /* height: var(--bs-card-size) !important; */
+}
+
+/*  -------------------------------------
+    |             A B O U T             |
+    -------------------------------------  */
+
+#about .about-body a {
+  color: var(--bs-primary) !important;
+  font-family: var(--bs-font-paragraph) !important;
+}
+
+#about .about-body p {
+  text-wrap: balance;
+}
+
+#about .about-body .container-fluid {
+  padding: 0vh !important;
+  text-align: center;
+}
+
+/*  -----------------------------------
+    |             T E C H             |
+    -----------------------------------  */
+
+#tech-stack .card-tech {
+  text-align: center !important;
+  text-wrap: wrap !important;
+  color: var(--bs-secondary-color) !important;
+}
+
+#tech-stack .card-tech h5,
+#tech-stack .card-tech p {
+  color: var(--bs-secondary-color) !important;
+}
+
+#tech-stack .card-tech img {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  transition: transform 0.3s;
+  /* filter: saturate(30%); */
+}
+
+#tech-stack .card-tech img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+#tech-stack .col img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+
+
+/*  -----------------------------------------
+    |             C O U R S E S             |
+    -----------------------------------------  */
+
+#courses .card {
+  text-align: center !important;
+}
+
+#courses .card img {
+  width: auto;
+  height: 400px;
+}
+
+/*  -----------------------------------
+        |             W O R K             |
+        -----------------------------------  */
+
+#work .card {
+  text-align: center !important;
+}
+
+#work .card a {
+  color: var(--bs-secondary-color);
+}
+
+#work .card a:hover {
+  color: var(--bs-primary);
+}
+
+#work .card img {
+  width: auto;
+  height: 400px;
 }
 
 /*  ---------------------------------------
