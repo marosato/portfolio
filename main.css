@@ -234,7 +234,23 @@ nav .navbar-icon svg {
   cursor: pointer;
 }
 
+/*  -------------------------------------
+    |             A B O U T             |
+    -------------------------------------  */
 
+#about .about-body a {
+  color: var(--bs-primary) !important;
+  font-family: var(--bs-font-paragraph) !important;
+}
+
+#about .about-body p {
+  text-wrap: balance;
+}
+
+#about .about-body .container-fluid {
+  padding: 0vh !important;
+  text-align: center;
+}
 
 /*  ---------------------------------------------
     |             P O R T F O L I O             |
@@ -289,24 +305,6 @@ nav .navbar-icon svg {
   /* height: var(--bs-card-size) !important; */
 }
 
-/*  -------------------------------------
-    |             A B O U T             |
-    -------------------------------------  */
-
-#about .about-body a {
-  color: var(--bs-primary) !important;
-  font-family: var(--bs-font-paragraph) !important;
-}
-
-#about .about-body p {
-  text-wrap: balance;
-}
-
-#about .about-body .container-fluid {
-  padding: 0vh !important;
-  text-align: center;
-}
-
 /*  -----------------------------------
     |             T E C H             |
     -----------------------------------  */
@@ -338,24 +336,9 @@ nav .navbar-icon svg {
   transform: rotate(10deg) scale(1.1);
 }
 
-
-
-/*  -----------------------------------------
-    |             C O U R S E S             |
-    -----------------------------------------  */
-
-#courses .card {
-  text-align: center !important;
-}
-
-#courses .card img {
-  width: auto;
-  height: 400px;
-}
-
 /*  -----------------------------------
-        |             W O R K             |
-        -----------------------------------  */
+    |             W O R K             |
+    -----------------------------------  */
 
 #work .card {
   text-align: center !important;
@@ -370,6 +353,36 @@ nav .navbar-icon svg {
 }
 
 #work .card img {
+  width: auto;
+  height: 400px;
+}
+
+/*  --------------------------------------------
+    |             E D U C A T I O N            |
+    --------------------------------------------  */
+
+#education .card h5 {
+  color: var(--bs-secondary-color);
+}
+
+#education .card img {
+  width: auto;
+  height: 400px;
+}
+
+/*  -----------------------------------------
+    |             C O U R S E S             |
+    -----------------------------------------  */
+
+#courses .card {
+  text-align: center !important;
+}
+
+#courses .card h5 {
+  color: var(--bs-secondary-color);
+}
+
+#courses .card img {
   width: auto;
   height: 400px;
 }
