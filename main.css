@@ -167,6 +167,10 @@ small {
     text-align: center;
   }
 
+  nav .navbar-nav {
+    padding: 1vh;
+  }
+
   #home {
     margin-top: 40px;
   }
@@ -236,7 +240,7 @@ nav .navbar-toggler {
 }
 
 nav .navbar-icon svg {
-  color: var(--bs-secondary-color) !important;
+  color: var(--bs-primary) !important;
   height: 30px;
   cursor: pointer;
 }
