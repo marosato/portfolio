@@ -32,9 +32,9 @@ body::before {
   z-index: -1;
 }
 
-html {
-  /* scroll-behavior: smooth; */
-}
+/* html {
+  scroll-behavior: smooth;
+} */
 
 head {
   display: none;
@@ -209,7 +209,6 @@ nav a,
 nav .nav-link {
   background-color: var(--bs-body-bg) !important;
   color: var(--bs-secondary-color) !important;
-  font-family: var(--bs-font-paragraph) !important;
   font-weight: 500;
   font-size: large;
 }
