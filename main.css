@@ -155,12 +155,6 @@ small {
 
 /* Celulares */
 @media only screen and (max-width: 767px) {
-  body {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-  }
-
   nav,
   nav a,
   nav .nav-link {
