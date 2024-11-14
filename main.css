@@ -232,7 +232,6 @@ nav .nav-link:hover {
 nav .nav-link svg {
   background-color: var(--bs-primary) !important;
   color: var(--bs-secondary-color) !important;
-  font-family: var(--bs-font-paragraph) !important;
   width: 24px;
   height: 24px;
 }
@@ -257,7 +256,6 @@ nav .navbar-icon svg {
 
 #about .about-body a {
   color: var(--bs-primary) !important;
-  font-family: var(--bs-font-paragraph) !important;
 }
 
 #about .about-body p {
@@ -267,6 +265,10 @@ nav .navbar-icon svg {
 #about .about-body .container-fluid {
   padding: 0vh !important;
   text-align: center;
+}
+
+#about .about-card a {
+  font-weight: 500 !important;
 }
 
 /*  ---------------------------------------------
