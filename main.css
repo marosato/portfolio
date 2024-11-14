@@ -7,8 +7,6 @@
   --bs-card-size: 400px;
 }
 
-/* --bs-font-paragraph: 'Poppins' !important; */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,12 +29,8 @@ body::before {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad del 50% */
-  z-index: -1; /* Asegúrate de que esté por encima de la imagen de fondo */
+  z-index: -1;
 }
-
-
-
-
 
 html {
   /* scroll-behavior: smooth; */
