@@ -132,7 +132,6 @@ small {
     margin: 0 auto;
     padding: 10px;
   }
-
 }
 
 /* Laptops */
@@ -155,6 +154,26 @@ small {
 
 /* Celulares */
 @media only screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    position: relative;
+    background-image: url('img/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad del 50% */
+    z-index: -1;
+  }
+
   nav,
   nav a,
   nav .nav-link {
