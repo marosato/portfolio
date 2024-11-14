@@ -365,6 +365,10 @@ nav .navbar-icon svg {
   color: var(--bs-secondary-color);
 }
 
+#education .card h5:hover {
+  color: var(--bs-primary);
+}
+
 #education .card img {
   width: auto;
   height: 400px;
@@ -380,6 +384,10 @@ nav .navbar-icon svg {
 
 #courses .card h5 {
   color: var(--bs-secondary-color);
+}
+
+#courses .card h5:hover {
+  color: var(--bs-primary);
 }
 
 #courses .card img {
