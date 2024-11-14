@@ -155,7 +155,7 @@ small {
 /* Celulares */
 @media only screen and (max-width: 767px) {
   body::before {
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+    background-color: rgba(0, 0, 0, 0.6); /* Color negro con opacidad del 50% */
   }
 
   nav,
