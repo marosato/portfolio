@@ -627,15 +627,6 @@
             });
         });
 
-        document.getElementById('techButton').onclick = function () {
-            var techList = document.getElementById('techList');
-            if (techList.style.display === "none") {
-                techList.style.display = "block";
-            } else {
-                techList.style.display = "none";
-            }
-        };
-
         // Verifica si un usuario abrió o cerró mi página web
         function handleVisibility() {
             if (document.visibilityState === "visible") {
