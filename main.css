@@ -177,13 +177,13 @@ small {
     margin-top: 40px;
   }
 
+  #about .about-card {
+    padding: 5vh !important;
+  }
+
   #tech-stack .card-tech img {
     width: 50px !important;
     height: 50px !important;
-  }
-
-  #about .about-card {
-    padding: 5vh !important;
   }
 
   footer .col,
@@ -330,7 +330,8 @@ nav .navbar-icon svg {
   text-decoration: none;
 }
 
-#portfolio .proyects #proyect-tech a:hover, #portfolio .proyects #proyect-tech svg:hover {
+#portfolio .proyects #proyect-tech a:hover,
+#portfolio .proyects #proyect-tech svg:hover {
   color: var(--bs-primary) !important;
 }
 
