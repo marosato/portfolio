@@ -324,6 +324,18 @@ nav .navbar-icon svg {
   /* height: var(--bs-card-size) !important; */
 }
 
+#portfolio .proyects #proyect-tech a,
+#portfolio .proyects #proyect-tech svg {
+  color: var(--bs-secondary-color) !important;
+  text-decoration: none;
+}
+
+#portfolio .proyects #proyect-tech a:hover, #portfolio .proyects #proyect-tech svg:hover {
+  color: var(--bs-primary) !important;
+}
+
+
+
 /*  -----------------------------------
     |             T E C H             |
     -----------------------------------  */
