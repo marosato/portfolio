@@ -163,13 +163,28 @@ document.addEventListener("DOMContentLoaded", function () {
         if (normalized.includes("quién eres")) {
             const answer = "Soy Macarena Ayelén Rosato, una Desarrolladora Backend con experiencia en soporte técnico dentro de una holding fintech, operando con el mismo nivel de control, precisión y trazabilidad que una entidad bancaria.";
             const suggestions = [
+                "¿De dónde sos?",
                 "¿Estás estudiando?",
                 "¿Estás trabajando?",
-                "¿Manejas alguna tecnología?",
+                "¿Qué lenguajes de programación manejas?",
                 "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
+
+        if (normalized.includes("de dónde sos") ||
+            normalized.includes("de dónde eres")) {
+            const answer = "Soy de Buenos Aires, Argentina.";
+            const suggestions = [
+                "¿Estás estudiando?",
+                "¿Estás trabajando?",
+                "¿Qué lenguajes de programación manejas?",
+                "¿Cómo puedo contactarte?"
+            ];
+            return withSuggestions ? { answer, suggestions } : answer;
+        }
+
+        // ESTUDIOS
         if (normalized.includes("dónde estudias") ||
             normalized.includes("qué estudias") ||
             normalized.includes("estás estudiando") ||
@@ -336,6 +351,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const answer = "¡Hola! Soy el chatbot de Macarena.\n¿En qué puedo ayudarte?";
             const suggestions = [
                 "¿Quién eres?",
+                "¿De dónde sos?",
                 "¿Qué estudias?",
                 "¿Tenés experiencia laboral?",
                 "¿Qué lenguajes de programación manejas?",
