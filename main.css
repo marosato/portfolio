@@ -484,13 +484,16 @@ footer .social-media .nav-link svg:hover {
 #chatbot-box {
   width: 320px;
   display: none;
-  background-color: var(--bs-tertiary-bg);
-  border: none;
+  background-color: #181818 !important;
+  /* border: none; */
+}
+
+#chatbot-box strong{
+  color: var(--bs-primary) !important;
 }
 
 #chatbot-box .card-header {
-  background-color: var(--bs-tertiary-bg) !important;
-  color: #fff;
+  color: #fff !important;
   padding: 0.5rem 1rem;
 }
 
@@ -534,7 +537,7 @@ footer .social-media .nav-link svg:hover {
 }
 
 .chatbot-suggestions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }

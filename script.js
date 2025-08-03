@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
             normalized.includes("qué herramientas manejas en tu trabajo") ||
             normalized.includes("qué herramientas manejas en tu trabajo?") ||
             normalized.includes("qué herramientas usas") ||
-            normalized.includes("qué herramientas usas en tu trabajo")){
+            normalized.includes("qué herramientas usas en tu trabajo")) {
             const answer = "Utilizo herramientas como DBeaver para la administración de bases de datos MySQL/MariaDB, y Postman para pruebas de APIs REST. También trabajo con Excel y SQL para el desarrollo de reportes financieros automatizados.";
             const suggestions = [
                 "¿Qué lenguajes de programación manejas?",
@@ -333,9 +333,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const answer = "¡Hola! Soy el chatbot de Macarena.\n¿En qué puedo ayudarte?";
             const suggestions = [
                 "¿Quién eres?",
-                "¿Qué tecnologías manejas?",
                 "¿Qué estudias?",
-                "¿Tienes experiencia laboral?",
+                "¿Tenés experiencia laboral?",
+                "¿Qué tecnologías manejas?",
                 "¿Cómo puedo contactarte?",
                 "¿Cuál es tu curso actual?"
             ];
