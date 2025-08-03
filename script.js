@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
             div.textContent = msg;
         } else {
             div.className = "mb-2 chatbot-bot-msg";
-            // Si la respuesta contiene un link, usar innerHTML
+            // Si la respuesta contiene un link, se usa innerHTML
             if (/<a\s|https?:\/\//i.test(msg)) {
                 const urlRegex = /(https?:\/\/[^\s<]+)/g;
                 div.innerHTML = msg.replace(urlRegex, url =>
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
     }
 
-    // Respuestas del bot
+    // SECCIÓN DE RESPUESTAS DEL BOT
     function getBotResponse(input, withSuggestions = false) {
         const normalized = input.toLowerCase();
 
@@ -170,17 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
-        if (normalized.includes("tecnologías") || normalized.includes("lenguajes") || normalized.includes("programación")) {
-            const answer = "Manejo HTML, CSS, JavaScript, Bootstrap, Java, SQL, MySQL, MariaDB, Go, PHP, Python, Git y más.";
-            const suggestions = [
-                "¿Dónde estudias?",
-                "¿Dónde trabajas?",
-                "¿Tenés experiencia laboral?"
-            ];
-            return withSuggestions ? { answer, suggestions } : answer;
-        }
-
         if (normalized.includes("dónde estudias") ||
             normalized.includes("qué estudias") ||
             normalized.includes("estás estudiando") ||
@@ -192,11 +181,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 "¿Estás haciendo algún curso?",
                 "¿Qué cursos hiciste?",
                 "¿Tenés experiencia laboral?",
-                "¿Qué tecnologías manejas?"
+                "¿Qué lenguajes de programación manejas?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
+        // EXPERIENCIA LABORAL
         if (
             normalized.includes("trabajaste") ||
             normalized.includes("trabajo") ||
@@ -208,50 +198,47 @@ document.addEventListener("DOMContentLoaded", function () {
             const answer = "Tengo experiencia profesional en soporte técnico y operativo dentro de una holding fintech, donde gestioné y analicé operaciones financieras utilizando DBeaver sobre bases de datos MySQL y MariaDB. También participé en la automatización de procesos, resolución de incidencias complejas y trabajo colaborativo con equipos, asegurando precisión y trazabilidad en cada tarea.";
             const suggestions = [
                 "¿Dónde trabajas actualmente?",
-                "¿Qué tecnologías o herramientas utilizas en tu trabajo?",
+                // "¿Qué tecnologías o herramientas utilizas en tu trabajo?",
                 "¿Cómo puedo contactarte?",
                 "¿Qué estudias?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
         if (normalized.includes("dónde trabajas") || normalized.includes("donde trabajas")) {
             const answer = "Actualmente trabajo en IBBA GROUP, una empresa del sector fintech con operaciones en varios países de Latinoamérica. Mi rol principal es el de dar soporte técnico, donde participo en la gestión y análisis de operaciones financieras, automatización de procesos y resolución de incidencias complejas.";
             const suggestions = [
-                "¿Qué tecnologías o herramientas utilizas en tu trabajo?",
+                // "¿Qué tecnologías o herramientas utilizas en tu trabajo?",
                 "¿Cuándo comenzaste a trabajar allí?",
                 "¿Qué estudias?",
                 "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
         if (normalized.includes("cuándo comenzaste a trabajar allí") || normalized.includes("cuando comenzaste a trabajar allí")) {
             const answer = "Comencé a trabajar en IBBA GROUP el 28 de noviembre de 2024.";
             const suggestions = [
-                "¿Qué herramientas utilizas en tu trabajo?",
+                // "¿Qué herramientas utilizas en tu trabajo?",
                 "¿Qué estudias?",
                 "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
-        if (normalized.includes("qué herramientas utilizas en tu trabajo?") ||
-            normalized.includes("qué herramientas utilizas en tu trabajo") ||
-            normalized.includes("qué herramientas utilizas") ||
-            normalized.includes("qué herramientas manejas") ||
-            normalized.includes("qué herramientas manejas en tu trabajo") ||
-            normalized.includes("qué herramientas manejas en tu trabajo?") ||
-            normalized.includes("qué herramientas usas") ||
-            normalized.includes("qué herramientas usas en tu trabajo")) {
-            const answer = "Utilizo herramientas como DBeaver para la administración de bases de datos MySQL/MariaDB, y Postman para pruebas de APIs REST. También trabajo con Excel y SQL para el desarrollo de reportes financieros automatizados.";
-            const suggestions = [
-                "¿Qué lenguajes de programación manejas?",
-                "¿Qué bases de datos utilizas?",
-                "¿Cómo puedo contactarte?"
-            ];
-            return withSuggestions ? { answer, suggestions } : answer;
-        }
+        // if (normalized.includes("qué herramientas utilizas en tu trabajo?") ||
+        //     normalized.includes("qué herramientas utilizas en tu trabajo") ||
+        //     normalized.includes("qué herramientas utilizas") ||
+        //     normalized.includes("qué herramientas manejas") ||
+        //     normalized.includes("qué herramientas manejas en tu trabajo") ||
+        //     normalized.includes("qué herramientas manejas en tu trabajo?") ||
+        //     normalized.includes("qué herramientas usas") ||
+        //     normalized.includes("qué herramientas usas en tu trabajo")) {
+        //     const answer = "Utilizo herramientas como DBeaver para la administración de bases de datos MySQL/MariaDB, y Postman para pruebas de APIs REST. También trabajo con Excel y SQL para el desarrollo de reportes financieros automatizados.";
+        //     const suggestions = [
+        //         "¿Qué lenguajes de programación manejas?",
+        //         "¿Qué bases de datos utilizas?",
+        //         "¿Cómo puedo contactarte?"
+        //     ];
+        //     return withSuggestions ? { answer, suggestions } : answer;
+        // }
 
         if (
             normalized.includes("curso actual") ||
@@ -269,7 +256,6 @@ document.addEventListener("DOMContentLoaded", function () {
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
         if (
             normalized.includes("cuándo comenzó la carrera en coderhouse") ||
             normalized.includes("cuando comenzó la carrera en coderhouse") ||
@@ -285,7 +271,6 @@ document.addEventListener("DOMContentLoaded", function () {
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
         if (
             normalized.includes("qué estudio estas priorizando hoy mismo") ||
             normalized.includes("qué estudio estás priorizando hoy mismo") ||
@@ -299,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const answer = "En este momento, mi prioridad académica es la carrera de Analista de Sistemas en el Instituto Tecnológico ORT, ya que esta formación me brinda una base sólida en programación, análisis y desarrollo de software, lo que considero que es fundamental para mi crecimiento profesional.";
             const suggestions = [
                 "¿Tenés experiencia laboral?",
-                "¿Qué tecnologías manejas?",
+                "¿Qué lenguajes de programación manejas?",
                 "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
@@ -308,13 +293,30 @@ document.addEventListener("DOMContentLoaded", function () {
             const answer = "He realizado cursos de Desarrollo Full Stack con Python y Java, AWS Cloud Computing, Habilidades Blandas y actualmente estoy cursando la Carrera de Desarrollo Backend en Coderhouse.";
             const suggestions = [
                 "¿Dónde estudias?",
-                "¿Qué tecnologías manejas?",
+                "¿Qué lenguajes de programación manejas?",
                 "¿Dónde trabajas?",
                 "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
+        // LENGUAJES DE PROGRAMACIÓN
+        if (normalized.includes("qué lenguajes de programación manejas") ||
+            normalized.includes("qué lenguajes de programación manejas?") ||
+            normalized.includes("qué lenguajes de programación usas") ||
+            normalized.includes("qué lenguajes de programación usas?") ||
+            normalized.includes("qué lenguajes de programación utilizas") ||
+            normalized.includes("qué lenguajes de programación utilizas?")) {
+            const answer = "Manejo HTML, CSS, JavaScript, Java, SQL, MySQL, MariaDB, Go, PHP y Python.";
+            const suggestions = [
+                // "¿Qué bases de datos utilizas?",
+                // "¿Qué frameworks o librerías usas?",
+                "¿Cómo puedo contactarte?"
+            ];
+            return withSuggestions ? { answer, suggestions } : answer;
+        }
+
+        // CONTACTO
         if (normalized.includes("contacto") || normalized.includes("contactar") || normalized.includes("cómo te contacto") || normalized.includes("como te contacto") || normalized.includes("cómo puedo contactarte") || normalized.includes("como puedo contactarte")) {
             const answer = `Puedes contactarme por email:<br>
             <a href="mailto:rosatomacarena@outlook.com">rosatomacarena@outlook.com</a> <br><br>
@@ -322,31 +324,31 @@ document.addEventListener("DOMContentLoaded", function () {
             https://www.linkedin.com/in/macarena-ayelen-rosato/`;
             const suggestions = [
                 "¿Quién eres?",
-                "¿Qué tecnologías manejas?",
+                "¿Qué lenguajes de programación manejas?",
                 "¿Dónde estudias?",
                 "¿Dónde trabajas?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
-        if (normalized === "inicio") {
+        // INICIO
+        if (normalized === "inicio" || normalized === "hola") {
             const answer = "¡Hola! Soy el chatbot de Macarena.\n¿En qué puedo ayudarte?";
             const suggestions = [
                 "¿Quién eres?",
                 "¿Qué estudias?",
                 "¿Tenés experiencia laboral?",
-                "¿Qué tecnologías manejas?",
+                "¿Qué lenguajes de programación manejas?",
                 "¿Cómo puedo contactarte?",
                 "¿Cuál es tu curso actual?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
-
         // Por defecto
         const answer = "¡Gracias por tu mensaje! ¿Hay algo más en lo que pueda ayudarte?";
         const suggestions = [
             "¿Quién eres?",
-            "¿Qué tecnologías manejas?",
+            "¿Qué lenguajes de programación manejas?",
             "¿Dónde estudias?",
             "¿Dónde trabajas?"
         ];
