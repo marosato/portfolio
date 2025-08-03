@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const faqs = [
         {
             q: "¿Quién eres?",
-            a: "Soy Macarena Ayelén Rosato, una Desarrolladora Backend con experiencia en soporte técnico dentro de una holding fintech, operando con el mismo nivel de control, precisión y trazabilidad que una entidad bancaria."      
+            a: "Soy Macarena Ayelén Rosato, una Desarrolladora Backend con experiencia en soporte técnico dentro de una holding fintech, operando con el mismo nivel de control, precisión y trazabilidad que una entidad bancaria."
         },
         {
             q: "¿Qué tecnologías manejas?",
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (chatbotMessages) {
             chatbotMessages.innerHTML = "";
             const { answer, suggestions } = getBotResponse("inicio", true);
-            appendMessage("¡Hola! Soy el chatbot de Macarena.\n¿En qué puedo ayudarte?", "bot", suggestions);
+            appendMessage(answer, "bot", suggestions);
         }
     }
 
@@ -161,11 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const normalized = input.toLowerCase();
 
         if (normalized.includes("quién eres")) {
-            const answer = "Soy Macarena Ayelén Rosato, desarrolladora backend junior.";
+            const answer = "Soy Macarena Ayelén Rosato, una Desarrolladora Backend con experiencia en soporte técnico dentro de una holding fintech, operando con el mismo nivel de control, precisión y trazabilidad que una entidad bancaria.";
             const suggestions = [
-                "¿Qué tecnologías manejas?",
-                "¿Dónde estudias?",
-                "¿Dónde trabajas?",
+                "¿Estás estudiando?",
+                "¿Estás trabajando?",
+                "¿Manejas alguna tecnología?",
                 "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
@@ -176,41 +176,79 @@ document.addEventListener("DOMContentLoaded", function () {
             const suggestions = [
                 "¿Dónde estudias?",
                 "¿Dónde trabajas?",
-                "¿Tienes experiencia laboral?",
-                "¿Cómo puedo contactarte?"
+                "¿Tenés experiencia laboral?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
-        if (normalized.includes("dónde estudias") || normalized.includes("estudios") || normalized.includes("formación")) {
+        if (normalized.includes("dónde estudias") ||
+            normalized.includes("qué estudias") ||
+            normalized.includes("estás estudiando") ||
+            normalized.includes("qué estás estudiando") ||
+            normalized.includes("estudios") ||
+            normalized.includes("formación")) {
             const answer = "Actualmente estudio Analista de Sistemas en el Instituto Tecnológico ORT y también Ingeniería en Informática en UADE.";
             const suggestions = [
-                "¿Qué tecnologías manejas?",
-                "¿Tienes experiencia laboral?",
+                "¿Estás haciendo algún curso?",
                 "¿Qué cursos hiciste?",
-                "¿Dónde trabajas?"
+                "¿Tenés experiencia laboral?",
+                "¿Qué tecnologías manejas?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
-        if (normalized.includes("trabajaste") || normalized.includes("trabajo") || normalized.includes("experiencia laboral")) {
-            const answer = "Tengo experiencia en soporte técnico y operativo en una holding fintech, revisando operaciones financieras en DBeaver sobre bases MySQL y MariaDB.";
+        if (
+            normalized.includes("trabajaste") ||
+            normalized.includes("trabajo") ||
+            normalized.includes("experiencia laboral") ||
+            normalized.includes("has trabajado") ||
+            normalized.includes("has tenido experiencia laboral") ||
+            normalized.includes("experiencia profesional")
+        ) {
+            const answer = "Tengo experiencia profesional en soporte técnico y operativo dentro de una holding fintech, donde gestioné y analicé operaciones financieras utilizando DBeaver sobre bases de datos MySQL y MariaDB. También participé en la automatización de procesos, resolución de incidencias complejas y trabajo colaborativo con equipos, asegurando precisión y trazabilidad en cada tarea.";
             const suggestions = [
-                "¿Dónde trabajas?",
-                "¿Qué tecnologías manejas?",
+                "¿Dónde trabajas actualmente?",
+                "¿Qué tecnologías o herramientas utilizas en tu trabajo?",
                 "¿Cómo puedo contactarte?",
-                "¿Qué cursos hiciste?"
+                "¿Qué estudias?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
         if (normalized.includes("dónde trabajas") || normalized.includes("donde trabajas")) {
-            const answer = "Actualmente estoy trabajando en IBBA GROUP, una empresa que forma parte de un holding fintech y tiene presencia en varios países de Latinoamérica.";
+            const answer = "Actualmente trabajo en IBBA GROUP, una empresa del sector fintech con operaciones en varios países de Latinoamérica. Mi rol principal es el de dar soporte técnico, donde participo en la gestión y análisis de operaciones financieras, automatización de procesos y resolución de incidencias complejas.";
             const suggestions = [
-                "¿Qué tecnologías manejas?",
-                "¿Tienes experiencia laboral?",
-                "¿Cómo puedo contactarte?",
-                "¿Qué cursos hiciste?"
+                "¿Qué tecnologías o herramientas utilizas en tu trabajo?",
+                "¿Cuándo comenzaste a trabajar allí?",
+                "¿Qué estudias?",
+                "¿Cómo puedo contactarte?"
+            ];
+            return withSuggestions ? { answer, suggestions } : answer;
+        }
+
+        if (normalized.includes("cuándo comenzaste a trabajar allí") || normalized.includes("cuando comenzaste a trabajar allí")) {
+            const answer = "Comencé a trabajar en IBBA GROUP el 28 de noviembre de 2024.";
+            const suggestions = [
+                "¿Qué herramientas utilizas en tu trabajo?",
+                "¿Qué estudias?",
+                "¿Cómo puedo contactarte?"
+            ];
+            return withSuggestions ? { answer, suggestions } : answer;
+        }
+
+        if (normalized.includes("qué herramientas utilizas en tu trabajo?") ||
+            normalized.includes("qué herramientas utilizas en tu trabajo") ||
+            normalized.includes("qué herramientas utilizas") ||
+            normalized.includes("qué herramientas manejas") ||
+            normalized.includes("qué herramientas manejas en tu trabajo") ||
+            normalized.includes("qué herramientas manejas en tu trabajo?") ||
+            normalized.includes("qué herramientas usas") ||
+            normalized.includes("qué herramientas usas en tu trabajo")){
+            const answer = "Utilizo herramientas como DBeaver para la administración de bases de datos MySQL/MariaDB, y Postman para pruebas de APIs REST. También trabajo con Excel y SQL para el desarrollo de reportes financieros automatizados.";
+            const suggestions = [
+                "¿Qué lenguajes de programación manejas?",
+                "¿Qué bases de datos utilizas?",
+                "¿Cómo puedo contactarte?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
@@ -220,19 +258,52 @@ document.addEventListener("DOMContentLoaded", function () {
             normalized.includes("curso reciente") ||
             normalized.includes("curso más reciente") ||
             normalized.includes("curso mas reciente") ||
-            normalized.includes("qué estás estudiando ahora") ||
-            normalized.includes("que estas estudiando ahora")
+            normalized.includes("estás haciendo algún curso") ||
+            normalized.includes("que estas estudiando ahora") ||
+            normalized.includes("qué estás estudiando ahora")
         ) {
-            const answer = "Actualmente estoy cursando la Carrera de Desarrollo Backend en Coderhouse. Inició el 2 de agosto de 2025 y se estima que finaliza el 8 de agosto de 2026.";
+            const answer = "Actualmente estoy cursando la Carrera de Desarrollo Backend en Coderhouse.";
             const suggestions = [
-                "¿Qué tecnologías manejas?",
-                "¿Dónde estudias?",
-                "¿Tienes experiencia laboral?",
-                "¿Cómo puedo contactarte?"
+                "¿Cuándo inició la carrera de Coderhouse?",
+                "¿Qué otros cursos hiciste?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
 
+        if (
+            normalized.includes("cuándo comenzó la carrera en coderhouse") ||
+            normalized.includes("cuando comenzó la carrera en coderhouse") ||
+            normalized.includes("cuando comenzo la carrera en coderhouse") ||
+            normalized.includes("cuándo inició la carrera de coderhouse") ||
+            normalized.includes("cuando inició la carrera de coderhouse") ||
+            normalized.includes("cuando inicio la carrera de coderhouse")
+        ) {
+            const answer = "La Carrera de Desarrollo Backend en Coderhouse comenzó el 2 de agosto de 2025 y se estima que finaliza el 8 de agosto de 2026.";
+            const suggestions = [
+                "¿Qué estudio estás priorizando actualmente?",
+                "¿Tenés experiencia laboral?"
+            ];
+            return withSuggestions ? { answer, suggestions } : answer;
+        }
+
+        if (
+            normalized.includes("qué estudio estas priorizando hoy mismo") ||
+            normalized.includes("qué estudio estás priorizando hoy mismo") ||
+            normalized.includes("qué estudio estas priorizando actualmente") ||
+            normalized.includes("qué estudio estás priorizando actualmente") ||
+            normalized.includes("qué estudio priorizas hoy") ||
+            normalized.includes("qué estudio priorizas actualmente") ||
+            normalized.includes("priorizas algún estudio") ||
+            normalized.includes("prioridad de estudio")
+        ) {
+            const answer = "En este momento, mi prioridad académica es la carrera de Analista de Sistemas en el Instituto Tecnológico ORT, ya que esta formación me brinda una base sólida en programación, análisis y desarrollo de software, lo que considero que es fundamental para mi crecimiento profesional.";
+            const suggestions = [
+                "¿Tenés experiencia laboral?",
+                "¿Qué tecnologías manejas?",
+                "¿Cómo puedo contactarte?"
+            ];
+            return withSuggestions ? { answer, suggestions } : answer;
+        }
         if (normalized.includes("cursos") || normalized.includes("certificados")) {
             const answer = "He realizado cursos de Desarrollo Full Stack con Python y Java, AWS Cloud Computing, Habilidades Blandas y actualmente estoy cursando la Carrera de Desarrollo Backend en Coderhouse.";
             const suggestions = [
@@ -263,8 +334,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const suggestions = [
                 "¿Quién eres?",
                 "¿Qué tecnologías manejas?",
-                "¿Dónde estudias?",
-                "¿Dónde trabajas?"
+                "¿Qué estudias?",
+                "¿Tienes experiencia laboral?",
+                "¿Cómo puedo contactarte?",
+                "¿Cuál es tu curso actual?"
             ];
             return withSuggestions ? { answer, suggestions } : answer;
         }
