@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Macarena Ayelén Rosato </title>
 
+    <script src="script.js"></script>
+
     <link rel="stylesheet" href="main.css">
 
     <!-- Details -->
@@ -64,7 +66,7 @@
         crossorigin="anonymous"></script>
 
     <!-- BACK TO TOP -->
-    <a href="#" class="position-fixed bottom-0 end-0 p-3" role="button" aria-label="Ir arriba" id="back-to-top">
+    <!-- <a href="#" class="position-fixed bottom-0 end-0 p-3" role="button" aria-label="Ir arriba" id="back-to-top">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
             class="bi bi-chevron-double-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -72,7 +74,7 @@
             <path fill-rule="evenodd"
                 d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
         </svg>
-    </a>
+    </a> -->
 </head>
 
 <body>
@@ -524,7 +526,8 @@
                 <p class="lead fs-5">
                     Soy <strong>Desarrolladora Backend Junior</strong>,
                     con experiencia en bases de datos, APIs y automatización de procesos.
-                    Tengo nociones y conocimientos básicos en el <em>desarrollo frontend</em>, lo que me permite integrarme en
+                    Tengo nociones y conocimientos básicos en el <em>desarrollo frontend</em>, lo que me permite
+                    integrarme en
                     entornos <em>full stack</em>.
                     Siempre busco optimizar y mejorar cada proyecto en el que trabajo. Me considero una persona
                     precisa, meticulosa y organizada en mi vida cotidiana.
@@ -581,6 +584,51 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHATBOT PERSONAL -->
+    <section id="chatbot-container">
+        <button id="chatbot-toggle" class="btn btn-primary rounded-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-dots"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2 2a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2.586l2.707 2.707A1 1 0 0 0 9 15V13h5a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm0 1h12a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H8v2.586L5.707 12H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+                <path
+                    d="M5 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+            </svg>
+        </button>
+        <div id="chatbot-box" class="card shadow">
+            <div class="card-header bg-primary text-white py-2 px-3">
+                <strong> Chatbot Personal </strong>
+                <button type="button" class="btn-close btn-close-white float-end" id="chatbot-close"
+                    aria-label="Cerrar">
+                </button>
+            </div>
+            <div class="card-body p-2" id="chatbot-messages">
+                <h1 class="mb-3 mt-1 text-secondary small">
+                    ¡Hola! Soy el chatbot de Macarena. <br>
+                    ¿En qué puedo ayudarte?
+                </h1>
+                <div class="mb-2">
+                    <button class="btn btn-outline-secondary btn-sm mb-1 chatbot-faq"> ¿Quién eres? </button>
+                    <button class="btn btn-outline-secondary btn-sm mb-1 chatbot-faq"> ¿Qué tecnologías manejas? </button>
+                    <button class="btn btn-outline-secondary btn-sm mb-1 chatbot-faq"> ¿Dónde estudias? </button>
+                    <button class="btn btn-outline-secondary btn-sm mb-1 chatbot-faq">
+                        ¿Tenés experiencia laboral?
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm mb-1 chatbot-faq"> ¿Cómo puedo contactarte? </button>
+                </div>
+            </div>
+            <div class="card-footer p-2">
+                <form id="chatbot-form" autocomplete="off">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="chatbot-input"
+                            placeholder="Escribe tu pregunta..." />
+                        <button class="btn btn-primary" type="submit"> Enviar </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -707,36 +755,6 @@
             </div>
         </footer>
     </div>
-
-    <!-- JAVASCRIPT -->
-    <script>
-        // Navbar Toggler Animation
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggler = document.querySelector(".navbar-toggler");
-            const listIcon = toggler.querySelector(".bi-list");
-            const xIcon = toggler.querySelector(".bi-x");
-
-            toggler.addEventListener("click", function () {
-                if (toggler.getAttribute("aria-expanded") === "true") {
-                    listIcon.style.display = "none";
-                    xIcon.style.display = "block";
-                } else {
-                    listIcon.style.display = "block";
-                    xIcon.style.display = "none";
-                }
-            });
-        });
-
-        // Verifica si un usuario abrió o cerró mi página web
-        function handleVisibility() {
-            if (document.visibilityState === "visible") {
-                console.log("El usuario está viendo tu página");
-            } else {
-                console.log("El usuario ha cerrado tu página");
-            }
-        }
-        document.addEventListener("visibilitychange", handleVisibility);
-    </script>
 
 </body>
 
